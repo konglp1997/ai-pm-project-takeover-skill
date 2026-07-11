@@ -1,0 +1,22 @@
+<h2>已确认的许可差异</h2>
+<article class="drift-item">
+  <h3>公开源码不等于获得再发布许可</h3>
+  <p><strong>上游现状：</strong>审阅提交的仓库根目录和 <code>docs-to-book</code> 目录都没有许可证文件。</p>
+  <p><strong>本项目处理：</strong>不复制上游模板，重新实现构建器、验证器、站点资产与文档；MIT 只覆盖本项目新内容。</p>
+  <p><strong>来源：</strong><code>NOTICE.md</code>、<code>docs/UPSTREAM-REVIEW.md</code>。</p>
+</article>
+
+<h2>实现方向的变化</h2>
+<div class="table-scroll">
+  <table>
+    <thead><tr><th>主题</th><th>上游</th><th>本项目</th></tr></thead>
+    <tbody>
+      <tr><td>运行时</td><td>Node.js / CommonJS</td><td>Python 3 标准库 / JSON</td></tr>
+      <tr><td>平台</td><td>Claude Code 目录</td><td>Codex 元数据与标准目录</td></tr>
+      <tr><td>链接</td><td>手工相对路径</td><td><code>page:</code> 与 <code>asset:</code></td></tr>
+      <tr><td>安全</td><td>结构与资产为主</td><td>额外检查秘密、远程资源、事件和路径越界</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<aside class="callout drift"><h4>发布前决定</h4><p>把 MIT 版权主体改成自己的姓名或组织，并再次确认上游是否新增许可证。</p></aside>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="说明上游许可边界与本项目的独立实现决策。">
+  <title>来源与漂移清单 · Build Project Handbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <script>window.__HANDBOOK_BASE__="../";</script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">跳到正文</a>
+  <div class="scrim" data-menu-close></div>
+  <div class="layout">
+    <aside class="sidebar" id="sidebar"><div class="brand"><a href="../index.html"><strong>Build Project Handbook</strong><span>示例项目手册</span></a></div><nav aria-label="Handbook chapters"><section class="nav-section"><h2>从这里开始</h2><a class="nav-link" href="../index.html"><span class="nav-number">01</span><span>Build Project Handbook</span></a><a class="nav-link" href="reading-guide.html"><span class="nav-number">02</span><span>阅读指南</span></a></section><section class="nav-section"><h2>系统设计</h2><a class="nav-link" href="architecture.html"><span class="nav-number">03</span><span>构建与验证架构</span></a></section><section class="nav-section"><h2>参考</h2><a class="nav-link current" href="drift-register.html" aria-current="page"><span class="nav-number">04</span><span>来源与漂移清单</span></a></section></nav></aside>
+    <main class="main" id="main-content">
+      <header class="topbar">
+        <button class="icon-button menu-button" type="button" data-menu-toggle aria-controls="sidebar" aria-expanded="false">目录</button>
+        <p class="breadcrumbs">参考 / 来源与漂移清单</p>
+        <button class="search-button" type="button" data-search-open>搜索 <kbd>⌘K</kbd></button>
+        <button class="icon-button" type="button" data-theme-toggle>明暗</button>
+        <span class="progress" aria-hidden="true"><span data-progress></span></span>
+      </header>
+      <div class="content-layout">
+        <article class="article">
+          <header class="page-header">
+            <p class="eyebrow">参考</p>
+            <h1>来源与漂移清单</h1>
+            <p class="page-summary">说明上游许可边界与本项目的独立实现决策。</p>
+            <p class="page-meta">约 5 分钟 · 第 4 / 4 页</p>
+            <div class="page-sources"><span>证据来源</span><code>NOTICE.md</code><code>docs/UPSTREAM-REVIEW.md</code></div>
+          </header>
+          <h2 id="已确认的许可差异"><a class="heading-anchor" href="#已确认的许可差异" aria-label="Link to 已确认的许可差异">#</a>已确认的许可差异</h2>
+<article class="drift-item">
+  <h3 id="公开源码不等于获得再发布许可"><a class="heading-anchor" href="#公开源码不等于获得再发布许可" aria-label="Link to 公开源码不等于获得再发布许可">#</a>公开源码不等于获得再发布许可</h3>
+  <p><strong>上游现状：</strong>审阅提交的仓库根目录和 <code>docs-to-book</code> 目录都没有许可证文件。</p>
+  <p><strong>本项目处理：</strong>不复制上游模板，重新实现构建器、验证器、站点资产与文档；MIT 只覆盖本项目新内容。</p>
+  <p><strong>来源：</strong><code>NOTICE.md</code>、<code>docs/UPSTREAM-REVIEW.md</code>。</p>
+</article>
+
+<h2 id="实现方向的变化"><a class="heading-anchor" href="#实现方向的变化" aria-label="Link to 实现方向的变化">#</a>实现方向的变化</h2>
+<div class="table-scroll">
+  <table>
+    <thead><tr><th>主题</th><th>上游</th><th>本项目</th></tr></thead>
+    <tbody>
+      <tr><td>运行时</td><td>Node.js / CommonJS</td><td>Python 3 标准库 / JSON</td></tr>
+      <tr><td>平台</td><td>Claude Code 目录</td><td>Codex 元数据与标准目录</td></tr>
+      <tr><td>链接</td><td>手工相对路径</td><td><code>page:</code> 与 <code>asset:</code></td></tr>
+      <tr><td>安全</td><td>结构与资产为主</td><td>额外检查秘密、远程资源、事件和路径越界</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<aside class="callout drift"><h4>发布前决定</h4><p>把 MIT 版权主体改成自己的姓名或组织，并再次确认上游是否新增许可证。</p></aside>
+
+          <nav class="pager" aria-label="Page navigation"><a class="pager-item previous" href="architecture.html"><span>上一篇</span><strong>构建与验证架构</strong></a><span class="pager-item next disabled"></span></nav>
+        </article>
+        <aside class="page-toc" aria-label="On this page"><h2>本页目录</h2><ol><li class="level-2"><a href="#已确认的许可差异">已确认的许可差异</a></li><li class="level-3"><a href="#公开源码不等于获得再发布许可">公开源码不等于获得再发布许可</a></li><li class="level-2"><a href="#实现方向的变化">实现方向的变化</a></li></ol></aside>
+      </div>
+    </main>
+  </div>
+  <div class="search-dialog" role="dialog" aria-modal="true" aria-label="搜索手册" hidden>
+    <div class="search-panel">
+      <label for="search-input">搜索手册</label>
+      <input id="search-input" type="search" autocomplete="off" placeholder="输入页面、概念或命令">
+      <div class="search-results" aria-live="polite"></div>
+      <button type="button" class="search-close" data-search-close>关闭</button>
+    </div>
+  </div>
+  <script src="../assets/search-index.js"></script>
+  
+  <script src="../assets/app.js"></script>
+</body>
+</html>

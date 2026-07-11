@@ -1,0 +1,27 @@
+<h2>输入与输出</h2>
+<div class="table-scroll">
+  <table>
+    <thead><tr><th>层</th><th>输入</th><th>输出</th></tr></thead>
+    <tbody>
+      <tr><td>Skill</td><td>用户目标、仓库资料与代码</td><td>证据台账、页面规划与交付决策</td></tr>
+      <tr><td>构建器</td><td><code>handbook.json</code>、<code>content/</code>、<code>assets/</code></td><td><code>index.html</code>、<code>pages/</code>、搜索索引</td></tr>
+      <tr><td>验证器</td><td>源文件与生成站点</td><td>错误、警告与检查统计</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h2>构建流程</h2>
+<ol class="steps">
+  <li><strong>校验配置。</strong>检查字段、slug、页面顺序和唯一首页。</li>
+  <li><strong>重写链接。</strong>把 <code>page:</code> 与 <code>asset:</code> 转为正确相对地址。</li>
+  <li><strong>生成导航。</strong>注入锚点、目录、侧边栏和上下页。</li>
+  <li><strong>建立搜索。</strong>从内容提取文本并写入本地索引。</li>
+  <li><strong>验证交付。</strong>同时检查源和生成结果。</li>
+</ol>
+
+<h2>安全边界</h2>
+<aside class="callout warning"><h4>验证器不是完整沙箱</h4><p>它能阻止常见脚本、远程资源、坏链接和秘密形态，但公开前仍需人工检查。</p></aside>
+
+<pre><code class="language-shell">python3 scripts/scaffold_handbook.py ./docs-site
+python3 scripts/build_handbook.py ./docs-site
+python3 scripts/verify_handbook.py ./docs-site</code></pre>

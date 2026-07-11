@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.9"
+      - name: Run unit tests
+        run: python3 -m unittest discover -s tests -v
+      - name: Validate skill metadata
+        run: |
+          python3 - <<'PY'
+          import re
+          from pathlib import Path
+          text = Path("skill/build-project-handbook/SKILL.md").read_text(encoding="utf-8")
+          match = re.match(r"^---\n(.*?)\n---\n", text, re.S)
+          if not match or "name: build-project-handbook" not in match.group(1) or "description:" not in match.group(1):
+              raise SystemExit("Invalid SKILL.md frontmatter")
+          print("Skill metadata looks valid")
+          PY
