@@ -1,0 +1,27 @@
+<h2>主旅程：辅助回复</h2>
+<ol class="steps">
+  <li><strong>触发：</strong>客服打开工单，系统获取租户、渠道、语言、产品版本和最近会话。</li>
+  <li><strong>理解：</strong>意图分类器识别问题类型、风险级别和所需知识域。</li>
+  <li><strong>取证：</strong>混合检索召回有权限且在有效期内的知识片段，并做重排。</li>
+  <li><strong>生成：</strong>模型按回复策略生成草稿、引用与置信提示；结构化校验不通过则重试一次。</li>
+  <li><strong>控制：</strong>高风险动作或低置信结果只给人工提示，不自动发送。</li>
+  <li><strong>学习：</strong>采纳、修改、拒绝及原因进入分析与评估队列。</li>
+</ol>
+
+<h2>失败恢复</h2>
+<div class="table-scroll"><table><thead><tr><th>失败点</th><th>用户可见行为</th><th>安全回退</th><th>产品信号</th></tr></thead><tbody>
+  <tr><td>无足够证据</td><td>说明无法确认并建议追问</td><td>禁止编造答案</td><td>记录知识缺口</td></tr>
+  <tr><td>知识冲突</td><td>展示冲突来源与生效日期</td><td>交由主管确认</td><td>创建治理任务</td></tr>
+  <tr><td>模型超时</td><td>保留原工作流，不阻塞工单</td><td>返回搜索结果或人工模式</td><td>记录分段延迟</td></tr>
+  <tr><td>敏感动作</td><td>展示建议步骤而非执行</td><td>二次确认与权限校验</td><td>审计动作意图</td></tr>
+</tbody></table></div>
+
+<h2>关键时刻</h2>
+<p><span class="evidence e2">E2 · Supported</span> 第一次可用建议出现的时间、引用是否可核查、失败时是否诚实，是影响信任和长期采用的三个关键时刻。</p>
+
+<h2>旅程指标</h2>
+<ul>
+  <li>Time to first useful suggestion，而非页面加载时间。</li>
+  <li>建议采纳后是否真正解决工单，而非仅统计点击“采用”。</li>
+  <li>人工修改幅度、拒绝原因与重新打开率。</li>
+</ul>

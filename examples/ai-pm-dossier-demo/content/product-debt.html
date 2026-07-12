@@ -1,0 +1,21 @@
+<h2>债务不是代码清单</h2>
+<p>产品债是阻碍团队可靠决策和交付用户价值的累积缺口，包括证据、指标、工作流、评估、知识与组织责任。</p>
+
+<h2>优先债务</h2>
+<div class="table-scroll"><table><thead><tr><th>债务</th><th>影响</th><th>证据</th><th>处置</th><th>优先级</th></tr></thead><tbody>
+  <tr><td>结果链路断裂</td><td>无法证明 AI 带来真实解决</td><td>事件 ID 无法贯通</td><td>统一建议—工单—结果事件</td><td>P0</td></tr>
+  <tr><td>评测切片不足</td><td>少数语言与冲突知识风险不可见</td><td>黄金集分布偏斜</td><td>补样本与双人标注</td><td>P0</td></tr>
+  <tr><td>知识 owner 不完整</td><td>过期与冲突处理慢</td><td>部分来源无责任人</td><td>owner + 新鲜度 SLA</td><td>P1</td></tr>
+  <tr><td>Prompt 决策记录缺失</td><td>难解释变更与回滚</td><td>仅有版本无理由</td><td>加入 ADR 与评测链接</td><td>P1</td></tr>
+  <tr><td>租户配置手工化</td><td>扩张放大运营成本</td><td>人工表格与脚本</td><td>自助校验与审计</td><td>P2</td></tr>
+</tbody></table></div>
+
+<h2>偿还规则</h2>
+<ol>
+  <li>债务进入同一产品 backlog，并关联用户、风险或决策影响。</li>
+  <li>P0 债务设 owner、时间与可观察退出标准；不能用“持续优化”结项。</li>
+  <li>每个季度保留固定容量，同时评估不偿还的期望损失。</li>
+</ol>
+
+<h2>完成定义</h2>
+<p><span class="evidence e2">E2 · Supported</span> “补了埋点”不等于完成；必须证明数据可查询、口径被采用、仪表盘有 owner、异常会触发明确动作。</p>

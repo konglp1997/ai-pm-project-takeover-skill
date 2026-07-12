@@ -1,0 +1,47 @@
+# 产品路线图
+
+## v0.2 · AI PM Takeover Core
+
+- AI 产品经理专用接手工作流。
+- E0–E3 证据模型。
+- 产品、AI 系统、指标、风险和 30/60/90 框架。
+- 20 章 dossier 脚手架。
+- 离线搜索站点、结构/链接/安全验证。
+- 作品集与面试文档。
+
+## v0.3 · Structured Intake and Reports
+
+- 交互式项目接手 Brief 模板。
+- 自动生成证据覆盖率和 E0–E3 分布报告。
+- 风险、产品债、利益相关方问题的 CSV/JSON 导出。
+- Dossier 与工作笔记的一致性检查。
+- 更丰富的 AI 能力卡和指标树组件。
+
+## v0.4 · Evaluation and Metrics Workspace
+
+- Evaluation registry：任务、数据集、Rubric、Judge、Baseline、Gate。
+- Metric contract validator。
+- Prompt/模型/评测变更记录。
+- 成本、延迟和质量 trade-off 模板。
+- AI capability → eval → metric → roadmap 追踪。
+
+## v0.5 · Collaboration
+
+- 利益相关方评审和决策日志。
+- 多角色阅读视图和责任矩阵。
+- 差异比较和增量更新。
+- 公开作品集脱敏导出检查清单。
+
+## v1.0 · Stable Takeover Operating System
+
+- 稳定的 dossier schema 和迁移策略。
+- 可扩展插件接口。
+- 多个匿名化 AI 产品接手基准案例。
+- 完整可访问性、性能、安全和跨平台验证。
+
+## 非目标
+
+- 替代产品经理的用户研究和判断。
+- 自动访问生产系统或运行危险操作。
+- 在没有证据时生成看似完整的商业结论。
+- 把内部项目一键发布为公开作品集。

@@ -1,0 +1,33 @@
+<aside class="callout warning"><h4>合成模型</h4><p>成本、时长和容量都是演示假设，应在真实项目中由财务账单、链路追踪和实验数据替换。</p></aside>
+
+<h2>单位经济模型</h2>
+<pre><code>单次辅助价值
+= 节省的人工分钟 × 完全负担人工成本
++ 质量改善带来的避免损失
+- 模型 / 检索 / 工具 / 观测成本
+- 知识治理与人工复核成本</code></pre>
+
+<h2>合成场景估算</h2>
+<div class="table-scroll"><table><thead><tr><th>场景</th><th>AI 变动成本</th><th>预计节省</th><th>主要敏感变量</th></tr></thead><tbody>
+  <tr><td>重复产品问答</td><td>¥0.12 / 次</td><td>1.8 分钟</td><td>缓存、短上下文、采纳率</td></tr>
+  <tr><td>复杂排障</td><td>¥0.48 / 次</td><td>2.4 分钟</td><td>长上下文、工具次数、返工</td></tr>
+  <tr><td>高风险政策</td><td>¥0.28 / 次</td><td>0.6 分钟</td><td>复核成本与错误损失</td></tr>
+</tbody></table></div>
+
+<h2>延迟预算</h2>
+<div class="definitions">
+  <div><dt>上下文与权限</dt><dd>目标 P95 350ms</dd></div>
+  <div><dt>检索与重排</dt><dd>目标 P95 900ms</dd></div>
+  <div><dt>模型首字</dt><dd>目标 P95 1.8s</dd></div>
+  <div><dt>完整生成与校验</dt><dd>目标 P95 4.5s，端到端目标 ≤ 5.0s</dd></div>
+</div>
+
+<h2>成本控制顺序</h2>
+<ol>
+  <li>先减少无价值调用和无边界的上下文，再讨论更便宜的模型。</li>
+  <li>用任务路由、检索缓存、结构化截断和批量评估降低成本。</li>
+  <li>任何降本都必须同时观察质量、安全、延迟和人工返工。</li>
+</ol>
+
+<h2>不确定性</h2>
+<p><span class="evidence e1">E1 · Inferred</span> 当前成本可从调用日志估算，但“节省分钟”和“避免损失”没有可靠对照实验，因此尚不能承诺 ROI。</p>

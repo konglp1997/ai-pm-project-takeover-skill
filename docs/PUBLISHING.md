@@ -1,44 +1,50 @@
-# 发布到自己的 GitHub
+# GitHub 发布说明
 
-本项目不会替你创建远程仓库或执行 GitHub 写操作。
+建议仓库名：`ai-pm-project-takeover-skill`。
 
-## 发布前
-
-1. 把 `LICENSE` 的版权主体改成你的姓名或组织，也可以保留 contributors。
-2. 保留 `NOTICE.md` 与上游许可边界。
-3. 更新 README 中的项目名、安装路径或截图。
-4. 运行测试与 Skill 校验。
-5. 检查个人路径、内部地址、令牌和临时产物。
+## 发布前检查
 
 ```bash
 python3 -m unittest discover -s tests -v
-python3 ~/.codex/skills/.system/skill-creator/scripts/quick_validate.py skill/build-project-handbook
+python3 ~/.codex/skills/.system/skill-creator/scripts/quick_validate.py skill/ai-pm-project-takeover
+git status
 ```
 
-## 初始化和推送
+确认：
 
-先在 GitHub 创建空仓库，例如 `build-project-handbook-skill`，不要自动生成 README 或 LICENSE。然后在本项目根目录执行：
+- README 和示例使用新品牌。
+- 没有真实公司、客户、Prompt、指标、内部路径、Token 或私有架构。
+- Demo 是虚构/匿名化案例。
+- CI、License、Security、Contributing、Roadmap 和 Interview Guide 齐全。
+
+## 新仓库推送
 
 ```bash
 git init
 git add .
 git status
-git commit -m "Initial release of build-project-handbook skill"
+git commit -m "Initial release of AI PM Project Takeover Skill"
 git branch -M main
-git remote add origin git@github.com:<你的用户名>/build-project-handbook-skill.git
+git remote add origin git@github.com:<你的用户名>/ai-pm-project-takeover-skill.git
 git push -u origin main
 ```
 
-推送前阅读 `git status`，不要把上游下载目录、真实项目代码或秘密文件加入提交。不要把访问令牌写进远程 URL。
+## 已有仓库改名
 
-## 首次发布后
-
-- 确认 GitHub Actions 通过。
-- 添加 `codex-skill`、`documentation`、`offline-first` 等主题。
-- 创建 `v0.1.0` 标签与 Release。
-- 明确真正的 Skill 位于 `skill/build-project-handbook/`。
+GitHub 仓库设置中把名称改为 `ai-pm-project-takeover-skill`，然后更新本地远程：
 
 ```bash
-git tag -a v0.1.0 -m "v0.1.0"
-git push origin v0.1.0
+git remote set-url origin https://github.com/<你的用户名>/ai-pm-project-takeover-skill.git
+git push
 ```
+
+GitHub 通常会保留旧 URL 重定向，但 README、Clone 命令和作品集链接应使用新地址。
+
+## Release
+
+```bash
+git tag -a v0.2.0 -m "AI PM Project Takeover v0.2.0"
+git push origin v0.2.0
+```
+
+Release 页面重点说明用户问题、九阶段工作流、20 章输出、E0–E3 模型、Demo、测试结果和当前限制。

@@ -1,0 +1,22 @@
+<h2>风险优先级</h2>
+<div class="table-scroll"><table><thead><tr><th>风险</th><th>影响 × 可能性</th><th>置信度</th><th>控制 / 下一步</th><th>Owner</th></tr></thead><tbody>
+  <tr><td>跨租户知识泄漏</td><td>极高 × 低</td><td><span class="evidence e2">E2</span></td><td>ACL 回归、红队、fail-closed 演练</td><td>安全 + 搜索</td></tr>
+  <tr><td>错误政策建议</td><td>高 × 中</td><td><span class="evidence e2">E2</span></td><td>有效期过滤、引用、人工确认</td><td>知识运营</td></tr>
+  <tr><td>价值指标失真</td><td>高 × 高</td><td><span class="evidence e3">E3</span></td><td>贯通结果事件、设置对照实验</td><td>AI PM + 数据</td></tr>
+  <tr><td>工具 Agent 越权</td><td>极高 × 低</td><td><span class="evidence e1">E1</span></td><td>白名单、最小权限、人工确认</td><td>平台工程</td></tr>
+  <tr><td>供应商价格 / 版本变动</td><td>中 × 中</td><td><span class="evidence e1">E1</span></td><td>网关、预算告警、回归与回滚</td><td>AI 平台</td></tr>
+</tbody></table></div>
+
+<h2>关键未知</h2>
+<ul>
+  <li><span class="evidence e0">E0 · Unknown</span> AI 对一次解决率和客户满意的真实增量是多少？</li>
+  <li><span class="evidence e0">E0 · Unknown</span> 全量规模下知识运营队列会增长到什么水平？</li>
+  <li><span class="evidence e0">E0 · Unknown</span> 删除请求能否在索引、缓存、日志和评测样本中完整传播？</li>
+  <li><span class="evidence e0">E0 · Unknown</span> 少数语言和复杂长对话的安全回退是否足够可靠？</li>
+</ul>
+
+<h2>停止条件</h2>
+<p>出现跨租户数据暴露、未授权高风险动作、严重政策错误上升或护栏事件无法追溯时，立即按能力或租户关闭 AI，恢复原工作流并启动事故响应。</p>
+
+<h2>风险接受原则</h2>
+<p>风险接受必须记录影响、证据、补偿控制、责任人、到期日和复审条件；“模型偶尔会错”不是可接受的风险说明。</p>

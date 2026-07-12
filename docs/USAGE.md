@@ -1,73 +1,147 @@
 # 使用说明
 
-## 安装
+## 你实际怎么使用
 
-从仓库根目录执行：
+Skill 不是独立应用。安装后，在 Codex 中打开你要接手的项目目录，通过提示词调用。Codex 会按照 Skill 的流程阅读资料和代码，并调用脚本生成档案。
+
+```text
+AI PM Project Takeover Skill
+          ↓ 指导 Codex
+目标项目的文档、代码、配置、测试和数据定义
+          ↓
+takeover-notes/ + ai-pm-dossier/
+```
+
+## 安装
 
 ```bash
 mkdir -p ~/.codex/skills
-cp -R skill/build-project-handbook ~/.codex/skills/build-project-handbook
+cp -R skill/ai-pm-project-takeover ~/.codex/skills/ai-pm-project-takeover
 ```
 
-目录名必须与 `SKILL.md` 中的 `name: build-project-handbook` 一致。安装后刷新 Codex 的 Skill 列表。
-
-## 推荐提示词
-
-完整项目：
+目录必须保持：
 
 ```text
-使用 $build-project-handbook 审计这个仓库的有效文档和当前代码，
-在 docs-site/ 生成离线项目手册。必须包含完整阅读路线、30 分钟速览、
-按角色路线、职责边界、运行流程、数据与集成、部署运维、术语表和漂移清单。
-构建后运行验证，并明确报告没有执行的浏览器检查。
+~/.codex/skills/ai-pm-project-takeover/SKILL.md
 ```
 
-无文档项目：
+刷新或重启 Codex。
+
+## 完整接手提示词
+
+在目标项目根目录调用：
 
 ```text
-使用 $build-project-handbook 按 code-first 路线梳理这个仓库。
-先从入口、模块、数据、配置、部署、外部集成和测试建立证据台账，
-再生成可离线打开的接手手册。不要把推断写成事实。
+使用 $ai-pm-project-takeover 接手当前 AI 项目。
+
+我的角色是新接手项目的 AI 产品经理。请从产品、用户、业务、AI 系统、数据、
+评测、指标、架构、运维和组织协作角度完成系统尽调。
+
+要求：
+1. 先选择 Product-led、Hybrid audit 或 Evidence recovery 路线并解释原因。
+2. 建立 takeover-notes/，记录资料清单、证据台账、文档漂移和未知问题。
+3. 所有重要结论使用 E3/E2/E1/E0 置信度，不要把推断或路线图写成已上线事实。
+4. 梳理用户、买方、管理员、运营、审核者和下游消费者。
+5. 梳理核心旅程、失败恢复、能力地图、范围和上线状态。
+6. 梳理模型、Prompt、上下文、RAG、Memory、Agent、工具调用、Guardrails、
+   人工审核、Fallback 和可观测性。
+7. 建立业务、产品、AI 质量、安全、系统和单位经济性指标体系。
+8. 输出产品债、风险、待确认问题、利益相关方访谈议程和 30/60/90 天计划。
+9. 在 ai-pm-dossier/ 生成可搜索离线档案并运行构建与验证。
+10. 报告未执行的浏览器、运行时或生产数据检查。
 ```
 
-只整理文档：
+## 快速一天接手模式
 
 ```text
-使用 $build-project-handbook 按 docs-first 路线重组 docs/，
-用代码抽查命令、配置名和关键流程。不要执行应用或部署命令。
+使用 $ai-pm-project-takeover 对当前项目做一天内可完成的快速接手。
+优先输出 Executive Brief、产品与用户、AI 系统图、当前能力状态、指标缺口、
+Top 10 风险/未知问题、关键利益相关方问题和前 30 天计划。
+深度不足的内容标 E0/E1，不要猜测。
 ```
 
-## 手工使用
+## 只有代码、没有产品文档
 
-### 1. 创建站点源目录
+```text
+使用 $ai-pm-project-takeover 按 Evidence recovery 路线接手当前项目。
+从入口、前端路由、API、Prompt、模型配置、Agent/RAG、Schema、测试、部署和历史
+反推当前产品行为。业务目标、用户价值和路线图无法从仓库确认时，整理为高优先级
+利益相关方问题，不要自行补全。
+```
+
+## 作品集安全模式
+
+```text
+使用 $ai-pm-project-takeover 基于当前项目制作一份公开作品集案例。
+保留问题框架、方法、设计决策、架构、验证、权衡和学习；删除或泛化公司名称、
+客户数据、真实指标、Prompt、私有模型、内部路径、端点、供应商和商业机密。
+任何无法公开的内容不要进入搜索索引和截图。
+```
+
+## 你需要参与的检查点
+
+Codex 可以自动继续，但建议你在四个节点确认：
+
+1. **证据路线：** 是否确实需要代码反推。
+2. **产品模型：** 用户、问题、范围和上线状态是否符合组织认知。
+3. **关键未知：** 哪些问题值得找人、补数据或做实验。
+4. **接手计划：** 优先级、负责人和退出标准是否现实。
+
+## 输出目录
+
+```text
+target-project/
+├── takeover-notes/
+│   ├── 00-brief.md
+│   ├── 01-inventory.md
+│   ├── 02-evidence-ledger.md
+│   ├── 03-drift-register.md
+│   └── 04-unknowns.md
+└── ai-pm-dossier/
+    ├── dossier.json
+    ├── content/
+    ├── assets/
+    ├── pages/
+    ├── index.html
+    └── README.md
+```
+
+打开 `ai-pm-dossier/index.html` 阅读。
+
+## 手工构建
+
+通常由 Codex 自动运行。需要手工操作时：
 
 ```bash
-python3 skill/build-project-handbook/scripts/scaffold_handbook.py ./docs-site
+python3 skill/ai-pm-project-takeover/scripts/scaffold_dossier.py ./ai-pm-dossier
+python3 skill/ai-pm-project-takeover/scripts/build_dossier.py ./ai-pm-dossier
+python3 skill/ai-pm-project-takeover/scripts/verify_dossier.py ./ai-pm-dossier
 ```
 
-脚手架只创建缺失文件，不覆盖已有配置、内容或资产。再次运行可以补齐误删的基础文件。
+脚手架只创建缺失文件，不覆盖已有内容。
 
-### 2. 编辑 `handbook.json`
+## `dossier.json`
 
 ```json
 {
   "language": "zh-CN",
-  "title": "示例项目手册",
-  "subtitle": "面向维护者的项目全景",
-  "description": "离线、可搜索的项目手册。",
+  "title": "AI Product Takeover Dossier",
+  "subtitle": "Evidence-backed AI PM operating model",
+  "description": "Project takeover dossier",
   "version": "0.1.0",
   "repository": "",
   "sections": [
     {
-      "title": "从这里开始",
+      "title": "Start",
       "pages": [
         {
           "slug": "index",
-          "title": "示例项目手册",
-          "summary": "项目定位与阅读入口。",
-          "minutes": 5,
+          "title": "AI Product Takeover",
+          "summary": "Project identity and takeover entry point.",
+          "minutes": 4,
           "home": true,
-          "sources": ["README.md"]
+          "sources": ["README.md"],
+          "status": "supported"
         }
       ]
     }
@@ -75,69 +149,18 @@ python3 skill/build-project-handbook/scripts/scaffold_handbook.py ./docs-site
 }
 ```
 
-规则：
+`status` 可选值：`verified`、`supported`、`inferred`、`unknown`。
 
-| 字段 | 要求 |
-|---|---|
-| `language` | HTML 语言，例如 `zh-CN` |
-| `sections` | 非空；顺序就是推荐阅读顺序 |
-| `slug` | 小写字母、数字、连字符；全站唯一 |
-| `home` | 全站必须且只能有一个 `true` |
-| `minutes` | 大于零的整数 |
-| `sources` | 证据路径数组，可以为空 |
-| `rationale` | `sources` 为空时必须填写页面依据 |
-
-### 3. 编写页面
-
-每页对应 `content/<slug>.html`。只写正文片段，不写 `html`、`head`、`body`、`script` 或页面级 `h1`。
-
-使用规范链接：
+页面链接使用：
 
 ```html
-<a href="page:architecture">阅读架构说明</a>
-<a href="page:operations#recovery">进入恢复章节</a>
-<img src="asset:diagrams/system.svg" alt="系统边界图">
+<a href="page:ai-system">查看 AI 系统</a>
+<img src="asset:diagrams/ai-runtime.svg" alt="AI 运行路径">
 ```
 
-构建器会计算正确的相对路径。`asset:` 不允许绝对路径、反斜杠或 `..`。
+## 安全边界
 
-### 4. 构建和验证
-
-```bash
-python3 skill/build-project-handbook/scripts/build_handbook.py ./docs-site
-python3 skill/build-project-handbook/scripts/verify_handbook.py ./docs-site
-```
-
-生成：
-
-```text
-docs-site/
-├── index.html
-├── pages/*.html
-├── assets/style.css
-├── assets/app.js
-├── assets/search-index.js
-├── handbook.json
-└── content/*.html
-```
-
-验证器检查配置、内容片段、来源、生成页面、内部链接、重复 ID、危险 HTML、远程资产、常见秘密和 Mermaid 本地运行时。
-
-## Mermaid
-
-本仓库不附带 Mermaid，避免未经确认复制第三方代码。需要时：
-
-1. 从 Mermaid 官方发行包取得 `mermaid.min.js`。
-2. 遵守其许可证。
-3. 放到站点 `assets/mermaid.min.js`。
-4. 使用 `<pre class="mermaid">...</pre>`。
-5. 在真实浏览器确认生成 SVG 且控制台无错误。
-
-无法捆绑运行时时，优先预渲染 SVG 并用 `asset:` 引用。
-
-## 离线边界
-
-- 样式、交互和搜索索引本地加载。
-- 普通外部超链接允许存在，但验证器会警告。
-- 远程脚本、样式、图片和媒体会导致失败。
-- 主要运行方式是直接打开 `file://.../index.html`。
+- 不要把真实 `.env`、Token、客户数据或私有 Prompt 写入档案。
+- 内部档案和公开作品集必须分开。
+- 自动秘密扫描不是安全证明，公开前人工检查 `content/`、生成页面和搜索索引。
+- 不要为了理解项目擅自执行迁移、部署、生产访问或外部写操作。

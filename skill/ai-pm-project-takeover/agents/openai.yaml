@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI PM Project Takeover"
+  short_description: "Audit and take over an unfamiliar AI product"
+  default_prompt: "Use $ai-pm-project-takeover to audit this AI product and create an evidence-backed takeover dossier."

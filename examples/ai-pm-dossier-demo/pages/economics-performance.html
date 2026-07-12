@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cost per task, latency, reliability, capacity, and value assumptions.">
+  <title>Economics and Performance · SupportLens AI Takeover Dossier</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <script>window.__DOSSIER_BASE__="../";</script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">跳到正文</a>
+  <div class="scrim" data-menu-close></div>
+  <div class="layout">
+    <aside class="sidebar" id="sidebar"><div class="brand"><a href="../index.html"><strong>SupportLens AI Takeover Dossier</strong><span>AI 客服知识副驾 · 合成项目接手案例</span></a></div><nav aria-label="Handbook chapters"><section class="nav-section"><h2>Start</h2><a class="nav-link" href="../index.html"><span class="nav-number">01</span><span>SupportLens AI Project Takeover</span></a><a class="nav-link" href="executive-brief.html"><span class="nav-number">02</span><span>Executive Brief</span></a><a class="nav-link" href="reading-guide.html"><span class="nav-number">03</span><span>Reading Guide</span></a></section><section class="nav-section"><h2>Product</h2><a class="nav-link" href="product-context.html"><span class="nav-number">04</span><span>Product Context and Users</span></a><a class="nav-link" href="user-journeys.html"><span class="nav-number">05</span><span>User Journeys</span></a><a class="nav-link" href="capability-map.html"><span class="nav-number">06</span><span>Capability Map</span></a></section><section class="nav-section"><h2>AI System</h2><a class="nav-link" href="ai-system.html"><span class="nav-number">07</span><span>AI System Map</span></a><a class="nav-link" href="data-knowledge.html"><span class="nav-number">08</span><span>Data and Knowledge</span></a><a class="nav-link" href="evaluation-guardrails.html"><span class="nav-number">09</span><span>Evaluation and Guardrails</span></a></section><section class="nav-section"><h2>Measurement</h2><a class="nav-link" href="metrics-scorecard.html"><span class="nav-number">10</span><span>Metrics Scorecard</span></a><a class="nav-link current" href="economics-performance.html" aria-current="page"><span class="nav-number">11</span><span>Economics and Performance</span></a></section><section class="nav-section"><h2>Delivery</h2><a class="nav-link" href="architecture-integrations.html"><span class="nav-number">12</span><span>Architecture and Integrations</span></a><a class="nav-link" href="operations-dependencies.html"><span class="nav-number">13</span><span>Operations and Dependencies</span></a></section><section class="nav-section"><h2>Direction</h2><a class="nav-link" href="current-state-roadmap.html"><span class="nav-number">14</span><span>Current State and Roadmap</span></a><a class="nav-link" href="product-debt.html"><span class="nav-number">15</span><span>Product Debt</span></a></section><section class="nav-section"><h2>Takeover</h2><a class="nav-link" href="risks-unknowns.html"><span class="nav-number">16</span><span>Risks and Unknowns</span></a><a class="nav-link" href="stakeholder-agenda.html"><span class="nav-number">17</span><span>Stakeholder Agenda</span></a><a class="nav-link" href="takeover-plan.html"><span class="nav-number">18</span><span>30 / 60 / 90 Day Plan</span></a></section><section class="nav-section"><h2>Reference</h2><a class="nav-link" href="drift-register.html"><span class="nav-number">19</span><span>Drift Register</span></a><a class="nav-link" href="glossary-sources.html"><span class="nav-number">20</span><span>Glossary and Source Map</span></a></section></nav></aside>
+    <main class="main" id="main-content">
+      <header class="topbar">
+        <button class="icon-button menu-button" type="button" data-menu-toggle aria-controls="sidebar" aria-expanded="false">目录</button>
+        <p class="breadcrumbs">Measurement / Economics and Performance</p>
+        <button class="search-button" type="button" data-search-open>搜索 <kbd>⌘K</kbd></button>
+        <button class="icon-button" type="button" data-theme-toggle>明暗</button>
+        <span class="progress" aria-hidden="true"><span data-progress></span></span>
+      </header>
+      <div class="content-layout">
+        <article class="article">
+          <header class="page-header">
+            <p class="eyebrow">Measurement</p>
+            <p class="status-line"><span class="evidence e1">E1 · Inferred</span></p>
+            <h1>Economics and Performance</h1>
+            <p class="page-summary">Cost per task, latency, reliability, capacity, and value assumptions.</p>
+            <p class="page-meta">约 7 分钟 · 第 11 / 20 页</p>
+            <div class="page-sources"><span>页面依据</span><p>Synthetic portfolio demo; all product names, data, metrics, and evidence are fictional.</p></div>
+          </header>
+          <aside class="callout warning"><h4>合成模型</h4><p>成本、时长和容量都是演示假设，应在真实项目中由财务账单、链路追踪和实验数据替换。</p></aside>
+
+<h2 id="单位经济模型"><a class="heading-anchor" href="#单位经济模型" aria-label="Link to 单位经济模型">#</a>单位经济模型</h2>
+<pre><code>单次辅助价值
+= 节省的人工分钟 × 完全负担人工成本
++ 质量改善带来的避免损失
+- 模型 / 检索 / 工具 / 观测成本
+- 知识治理与人工复核成本</code></pre>
+
+<h2 id="合成场景估算"><a class="heading-anchor" href="#合成场景估算" aria-label="Link to 合成场景估算">#</a>合成场景估算</h2>
+<div class="table-scroll"><table><thead><tr><th>场景</th><th>AI 变动成本</th><th>预计节省</th><th>主要敏感变量</th></tr></thead><tbody>
+  <tr><td>重复产品问答</td><td>¥0.12 / 次</td><td>1.8 分钟</td><td>缓存、短上下文、采纳率</td></tr>
+  <tr><td>复杂排障</td><td>¥0.48 / 次</td><td>2.4 分钟</td><td>长上下文、工具次数、返工</td></tr>
+  <tr><td>高风险政策</td><td>¥0.28 / 次</td><td>0.6 分钟</td><td>复核成本与错误损失</td></tr>
+</tbody></table></div>
+
+<h2 id="延迟预算"><a class="heading-anchor" href="#延迟预算" aria-label="Link to 延迟预算">#</a>延迟预算</h2>
+<div class="definitions">
+  <div><dt>上下文与权限</dt><dd>目标 P95 350ms</dd></div>
+  <div><dt>检索与重排</dt><dd>目标 P95 900ms</dd></div>
+  <div><dt>模型首字</dt><dd>目标 P95 1.8s</dd></div>
+  <div><dt>完整生成与校验</dt><dd>目标 P95 4.5s，端到端目标 ≤ 5.0s</dd></div>
+</div>
+
+<h2 id="成本控制顺序"><a class="heading-anchor" href="#成本控制顺序" aria-label="Link to 成本控制顺序">#</a>成本控制顺序</h2>
+<ol>
+  <li>先减少无价值调用和无边界的上下文，再讨论更便宜的模型。</li>
+  <li>用任务路由、检索缓存、结构化截断和批量评估降低成本。</li>
+  <li>任何降本都必须同时观察质量、安全、延迟和人工返工。</li>
+</ol>
+
+<h2 id="不确定性"><a class="heading-anchor" href="#不确定性" aria-label="Link to 不确定性">#</a>不确定性</h2>
+<p><span class="evidence e1">E1 · Inferred</span> 当前成本可从调用日志估算，但“节省分钟”和“避免损失”没有可靠对照实验，因此尚不能承诺 ROI。</p>
+
+          <nav class="pager" aria-label="Page navigation"><a class="pager-item previous" href="metrics-scorecard.html"><span>上一篇</span><strong>Metrics Scorecard</strong></a><a class="pager-item next" href="architecture-integrations.html"><span>下一篇</span><strong>Architecture and Integrations</strong></a></nav>
+        </article>
+        <aside class="page-toc" aria-label="On this page"><h2>本页目录</h2><ol><li class="level-2"><a href="#单位经济模型">单位经济模型</a></li><li class="level-2"><a href="#合成场景估算">合成场景估算</a></li><li class="level-2"><a href="#延迟预算">延迟预算</a></li><li class="level-2"><a href="#成本控制顺序">成本控制顺序</a></li><li class="level-2"><a href="#不确定性">不确定性</a></li></ol></aside>
+      </div>
+    </main>
+  </div>
+  <div class="search-dialog" role="dialog" aria-modal="true" aria-label="搜索手册" hidden>
+    <div class="search-panel">
+      <label for="search-input">搜索手册</label>
+      <input id="search-input" type="search" autocomplete="off" placeholder="输入页面、概念或命令">
+      <div class="search-results" aria-live="polite"></div>
+      <button type="button" class="search-close" data-search-close>关闭</button>
+    </div>
+  </div>
+  <script src="../assets/search-index.js"></script>
+  
+  <script src="../assets/app.js"></script>
+</body>
+</html>

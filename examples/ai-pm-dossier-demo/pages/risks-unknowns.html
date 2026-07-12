@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Prioritized product, AI, data, delivery, and governance risks.">
+  <title>Risks and Unknowns · SupportLens AI Takeover Dossier</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <script>window.__DOSSIER_BASE__="../";</script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">跳到正文</a>
+  <div class="scrim" data-menu-close></div>
+  <div class="layout">
+    <aside class="sidebar" id="sidebar"><div class="brand"><a href="../index.html"><strong>SupportLens AI Takeover Dossier</strong><span>AI 客服知识副驾 · 合成项目接手案例</span></a></div><nav aria-label="Handbook chapters"><section class="nav-section"><h2>Start</h2><a class="nav-link" href="../index.html"><span class="nav-number">01</span><span>SupportLens AI Project Takeover</span></a><a class="nav-link" href="executive-brief.html"><span class="nav-number">02</span><span>Executive Brief</span></a><a class="nav-link" href="reading-guide.html"><span class="nav-number">03</span><span>Reading Guide</span></a></section><section class="nav-section"><h2>Product</h2><a class="nav-link" href="product-context.html"><span class="nav-number">04</span><span>Product Context and Users</span></a><a class="nav-link" href="user-journeys.html"><span class="nav-number">05</span><span>User Journeys</span></a><a class="nav-link" href="capability-map.html"><span class="nav-number">06</span><span>Capability Map</span></a></section><section class="nav-section"><h2>AI System</h2><a class="nav-link" href="ai-system.html"><span class="nav-number">07</span><span>AI System Map</span></a><a class="nav-link" href="data-knowledge.html"><span class="nav-number">08</span><span>Data and Knowledge</span></a><a class="nav-link" href="evaluation-guardrails.html"><span class="nav-number">09</span><span>Evaluation and Guardrails</span></a></section><section class="nav-section"><h2>Measurement</h2><a class="nav-link" href="metrics-scorecard.html"><span class="nav-number">10</span><span>Metrics Scorecard</span></a><a class="nav-link" href="economics-performance.html"><span class="nav-number">11</span><span>Economics and Performance</span></a></section><section class="nav-section"><h2>Delivery</h2><a class="nav-link" href="architecture-integrations.html"><span class="nav-number">12</span><span>Architecture and Integrations</span></a><a class="nav-link" href="operations-dependencies.html"><span class="nav-number">13</span><span>Operations and Dependencies</span></a></section><section class="nav-section"><h2>Direction</h2><a class="nav-link" href="current-state-roadmap.html"><span class="nav-number">14</span><span>Current State and Roadmap</span></a><a class="nav-link" href="product-debt.html"><span class="nav-number">15</span><span>Product Debt</span></a></section><section class="nav-section"><h2>Takeover</h2><a class="nav-link current" href="risks-unknowns.html" aria-current="page"><span class="nav-number">16</span><span>Risks and Unknowns</span></a><a class="nav-link" href="stakeholder-agenda.html"><span class="nav-number">17</span><span>Stakeholder Agenda</span></a><a class="nav-link" href="takeover-plan.html"><span class="nav-number">18</span><span>30 / 60 / 90 Day Plan</span></a></section><section class="nav-section"><h2>Reference</h2><a class="nav-link" href="drift-register.html"><span class="nav-number">19</span><span>Drift Register</span></a><a class="nav-link" href="glossary-sources.html"><span class="nav-number">20</span><span>Glossary and Source Map</span></a></section></nav></aside>
+    <main class="main" id="main-content">
+      <header class="topbar">
+        <button class="icon-button menu-button" type="button" data-menu-toggle aria-controls="sidebar" aria-expanded="false">目录</button>
+        <p class="breadcrumbs">Takeover / Risks and Unknowns</p>
+        <button class="search-button" type="button" data-search-open>搜索 <kbd>⌘K</kbd></button>
+        <button class="icon-button" type="button" data-theme-toggle>明暗</button>
+        <span class="progress" aria-hidden="true"><span data-progress></span></span>
+      </header>
+      <div class="content-layout">
+        <article class="article">
+          <header class="page-header">
+            <p class="eyebrow">Takeover</p>
+            <p class="status-line"><span class="evidence e0">E0 · Unknown</span></p>
+            <h1>Risks and Unknowns</h1>
+            <p class="page-summary">Prioritized product, AI, data, delivery, and governance risks.</p>
+            <p class="page-meta">约 7 分钟 · 第 16 / 20 页</p>
+            <div class="page-sources"><span>页面依据</span><p>Synthetic portfolio demo; all product names, data, metrics, and evidence are fictional.</p></div>
+          </header>
+          <h2 id="风险优先级"><a class="heading-anchor" href="#风险优先级" aria-label="Link to 风险优先级">#</a>风险优先级</h2>
+<div class="table-scroll"><table><thead><tr><th>风险</th><th>影响 × 可能性</th><th>置信度</th><th>控制 / 下一步</th><th>Owner</th></tr></thead><tbody>
+  <tr><td>跨租户知识泄漏</td><td>极高 × 低</td><td><span class="evidence e2">E2</span></td><td>ACL 回归、红队、fail-closed 演练</td><td>安全 + 搜索</td></tr>
+  <tr><td>错误政策建议</td><td>高 × 中</td><td><span class="evidence e2">E2</span></td><td>有效期过滤、引用、人工确认</td><td>知识运营</td></tr>
+  <tr><td>价值指标失真</td><td>高 × 高</td><td><span class="evidence e3">E3</span></td><td>贯通结果事件、设置对照实验</td><td>AI PM + 数据</td></tr>
+  <tr><td>工具 Agent 越权</td><td>极高 × 低</td><td><span class="evidence e1">E1</span></td><td>白名单、最小权限、人工确认</td><td>平台工程</td></tr>
+  <tr><td>供应商价格 / 版本变动</td><td>中 × 中</td><td><span class="evidence e1">E1</span></td><td>网关、预算告警、回归与回滚</td><td>AI 平台</td></tr>
+</tbody></table></div>
+
+<h2 id="关键未知"><a class="heading-anchor" href="#关键未知" aria-label="Link to 关键未知">#</a>关键未知</h2>
+<ul>
+  <li><span class="evidence e0">E0 · Unknown</span> AI 对一次解决率和客户满意的真实增量是多少？</li>
+  <li><span class="evidence e0">E0 · Unknown</span> 全量规模下知识运营队列会增长到什么水平？</li>
+  <li><span class="evidence e0">E0 · Unknown</span> 删除请求能否在索引、缓存、日志和评测样本中完整传播？</li>
+  <li><span class="evidence e0">E0 · Unknown</span> 少数语言和复杂长对话的安全回退是否足够可靠？</li>
+</ul>
+
+<h2 id="停止条件"><a class="heading-anchor" href="#停止条件" aria-label="Link to 停止条件">#</a>停止条件</h2>
+<p>出现跨租户数据暴露、未授权高风险动作、严重政策错误上升或护栏事件无法追溯时，立即按能力或租户关闭 AI，恢复原工作流并启动事故响应。</p>
+
+<h2 id="风险接受原则"><a class="heading-anchor" href="#风险接受原则" aria-label="Link to 风险接受原则">#</a>风险接受原则</h2>
+<p>风险接受必须记录影响、证据、补偿控制、责任人、到期日和复审条件；“模型偶尔会错”不是可接受的风险说明。</p>
+
+          <nav class="pager" aria-label="Page navigation"><a class="pager-item previous" href="product-debt.html"><span>上一篇</span><strong>Product Debt</strong></a><a class="pager-item next" href="stakeholder-agenda.html"><span>下一篇</span><strong>Stakeholder Agenda</strong></a></nav>
+        </article>
+        <aside class="page-toc" aria-label="On this page"><h2>本页目录</h2><ol><li class="level-2"><a href="#风险优先级">风险优先级</a></li><li class="level-2"><a href="#关键未知">关键未知</a></li><li class="level-2"><a href="#停止条件">停止条件</a></li><li class="level-2"><a href="#风险接受原则">风险接受原则</a></li></ol></aside>
+      </div>
+    </main>
+  </div>
+  <div class="search-dialog" role="dialog" aria-modal="true" aria-label="搜索手册" hidden>
+    <div class="search-panel">
+      <label for="search-input">搜索手册</label>
+      <input id="search-input" type="search" autocomplete="off" placeholder="输入页面、概念或命令">
+      <div class="search-results" aria-live="polite"></div>
+      <button type="button" class="search-close" data-search-close>关闭</button>
+    </div>
+  </div>
+  <script src="../assets/search-index.js"></script>
+  
+  <script src="../assets/app.js"></script>
+</body>
+</html>

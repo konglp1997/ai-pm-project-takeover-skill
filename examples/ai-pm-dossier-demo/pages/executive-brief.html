@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The product, AI value, current state, critical risks, and immediate decisions.">
+  <title>Executive Brief · SupportLens AI Takeover Dossier</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <script>window.__DOSSIER_BASE__="../";</script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">跳到正文</a>
+  <div class="scrim" data-menu-close></div>
+  <div class="layout">
+    <aside class="sidebar" id="sidebar"><div class="brand"><a href="../index.html"><strong>SupportLens AI Takeover Dossier</strong><span>AI 客服知识副驾 · 合成项目接手案例</span></a></div><nav aria-label="Handbook chapters"><section class="nav-section"><h2>Start</h2><a class="nav-link" href="../index.html"><span class="nav-number">01</span><span>SupportLens AI Project Takeover</span></a><a class="nav-link current" href="executive-brief.html" aria-current="page"><span class="nav-number">02</span><span>Executive Brief</span></a><a class="nav-link" href="reading-guide.html"><span class="nav-number">03</span><span>Reading Guide</span></a></section><section class="nav-section"><h2>Product</h2><a class="nav-link" href="product-context.html"><span class="nav-number">04</span><span>Product Context and Users</span></a><a class="nav-link" href="user-journeys.html"><span class="nav-number">05</span><span>User Journeys</span></a><a class="nav-link" href="capability-map.html"><span class="nav-number">06</span><span>Capability Map</span></a></section><section class="nav-section"><h2>AI System</h2><a class="nav-link" href="ai-system.html"><span class="nav-number">07</span><span>AI System Map</span></a><a class="nav-link" href="data-knowledge.html"><span class="nav-number">08</span><span>Data and Knowledge</span></a><a class="nav-link" href="evaluation-guardrails.html"><span class="nav-number">09</span><span>Evaluation and Guardrails</span></a></section><section class="nav-section"><h2>Measurement</h2><a class="nav-link" href="metrics-scorecard.html"><span class="nav-number">10</span><span>Metrics Scorecard</span></a><a class="nav-link" href="economics-performance.html"><span class="nav-number">11</span><span>Economics and Performance</span></a></section><section class="nav-section"><h2>Delivery</h2><a class="nav-link" href="architecture-integrations.html"><span class="nav-number">12</span><span>Architecture and Integrations</span></a><a class="nav-link" href="operations-dependencies.html"><span class="nav-number">13</span><span>Operations and Dependencies</span></a></section><section class="nav-section"><h2>Direction</h2><a class="nav-link" href="current-state-roadmap.html"><span class="nav-number">14</span><span>Current State and Roadmap</span></a><a class="nav-link" href="product-debt.html"><span class="nav-number">15</span><span>Product Debt</span></a></section><section class="nav-section"><h2>Takeover</h2><a class="nav-link" href="risks-unknowns.html"><span class="nav-number">16</span><span>Risks and Unknowns</span></a><a class="nav-link" href="stakeholder-agenda.html"><span class="nav-number">17</span><span>Stakeholder Agenda</span></a><a class="nav-link" href="takeover-plan.html"><span class="nav-number">18</span><span>30 / 60 / 90 Day Plan</span></a></section><section class="nav-section"><h2>Reference</h2><a class="nav-link" href="drift-register.html"><span class="nav-number">19</span><span>Drift Register</span></a><a class="nav-link" href="glossary-sources.html"><span class="nav-number">20</span><span>Glossary and Source Map</span></a></section></nav></aside>
+    <main class="main" id="main-content">
+      <header class="topbar">
+        <button class="icon-button menu-button" type="button" data-menu-toggle aria-controls="sidebar" aria-expanded="false">目录</button>
+        <p class="breadcrumbs">Start / Executive Brief</p>
+        <button class="search-button" type="button" data-search-open>搜索 <kbd>⌘K</kbd></button>
+        <button class="icon-button" type="button" data-theme-toggle>明暗</button>
+        <span class="progress" aria-hidden="true"><span data-progress></span></span>
+      </header>
+      <div class="content-layout">
+        <article class="article">
+          <header class="page-header">
+            <p class="eyebrow">Start</p>
+            <p class="status-line"><span class="evidence e3">E3 · Verified</span></p>
+            <h1>Executive Brief</h1>
+            <p class="page-summary">The product, AI value, current state, critical risks, and immediate decisions.</p>
+            <p class="page-meta">约 7 分钟 · 第 2 / 20 页</p>
+            <div class="page-sources"><span>页面依据</span><p>Synthetic portfolio demo; all product names, data, metrics, and evidence are fictional.</p></div>
+          </header>
+          <aside class="callout warning"><h4>合成案例</h4><p>本页中的数字是用于演示分析框架的合成基线，不是实际业务结果。</p></aside>
+
+<h2 id="一句话产品定义"><a class="heading-anchor" href="#一句话产品定义" aria-label="Link to 一句话产品定义">#</a>一句话产品定义</h2>
+<p><strong>SupportLens AI</strong> 面向中大型 SaaS 客服团队，将分散的帮助中心、工单历史与内部政策转化为带引用的回复建议，并把低置信度、高风险请求交给人工处理。</p>
+
+<h2 id="价值链路"><a class="heading-anchor" href="#价值链路" aria-label="Link to 价值链路">#</a>价值链路</h2>
+<ol class="steps">
+  <li>客服在工单侧边栏发起问题，系统结合客户、产品版本和会话上下文判断意图。</li>
+  <li>检索层从已授权知识中召回证据，生成层产出带引用草稿和置信提示。</li>
+  <li>人工确认、修改或拒绝建议；反馈进入评估与知识治理队列，而非直接污染知识库。</li>
+</ol>
+
+<h2 id="决策快照"><a class="heading-anchor" href="#决策快照" aria-label="Link to 决策快照">#</a>决策快照</h2>
+<div class="cards">
+  <article class="card"><h4>已证实</h4><p><span class="evidence e3">E3 · Verified</span> 核心检索—生成—引用—人工确认链路和安全回退存在。</p></article>
+  <article class="card"><h4>有依据</h4><p><span class="evidence e2">E2 · Supported</span> 合成分析显示重复咨询场景最适合先落地。</p></article>
+  <article class="card"><h4>待验证</h4><p><span class="evidence e0">E0 · Unknown</span> 对解决时长、一次解决率和续费的真实增量尚未建立因果证据。</p></article>
+</div>
+
+<h2 id="接手建议"><a class="heading-anchor" href="#接手建议" aria-label="Link to 接手建议">#</a>接手建议</h2>
+<div class="decision-block">
+  <h3 id="未来-30-天不扩大自动执行范围"><a class="heading-anchor" href="#未来-30-天不扩大自动执行范围" aria-label="Link to 未来 30 天不扩大自动执行范围">#</a>未来 30 天不扩大自动执行范围</h3>
+  <p>先统一成功口径、建立黄金评测集、补齐按场景分层的线上质量监控，并完成高风险动作权限审计。达成门禁后，再用受控实验验证推广。</p>
+</div>
+
+<h2 id="管理层需要做的三个决定"><a class="heading-anchor" href="#管理层需要做的三个决定" aria-label="Link to 管理层需要做的三个决定">#</a>管理层需要做的三个决定</h2>
+<ol>
+  <li>北极星指标采用“有效辅助解决率”，而不是单纯采用量或生成次数。</li>
+  <li>退款、账户变更等高风险动作继续保持人工确认。</li>
+  <li>资源优先投入评估与知识治理，而非新增更多模型和渠道。</li>
+</ol>
+
+          <nav class="pager" aria-label="Page navigation"><a class="pager-item previous" href="../index.html"><span>上一篇</span><strong>SupportLens AI Project Takeover</strong></a><a class="pager-item next" href="reading-guide.html"><span>下一篇</span><strong>Reading Guide</strong></a></nav>
+        </article>
+        <aside class="page-toc" aria-label="On this page"><h2>本页目录</h2><ol><li class="level-2"><a href="#一句话产品定义">一句话产品定义</a></li><li class="level-2"><a href="#价值链路">价值链路</a></li><li class="level-2"><a href="#决策快照">决策快照</a></li><li class="level-2"><a href="#接手建议">接手建议</a></li><li class="level-3"><a href="#未来-30-天不扩大自动执行范围">未来 30 天不扩大自动执行范围</a></li><li class="level-2"><a href="#管理层需要做的三个决定">管理层需要做的三个决定</a></li></ol></aside>
+      </div>
+    </main>
+  </div>
+  <div class="search-dialog" role="dialog" aria-modal="true" aria-label="搜索手册" hidden>
+    <div class="search-panel">
+      <label for="search-input">搜索手册</label>
+      <input id="search-input" type="search" autocomplete="off" placeholder="输入页面、概念或命令">
+      <div class="search-results" aria-live="polite"></div>
+      <button type="button" class="search-close" data-search-close>关闭</button>
+    </div>
+  </div>
+  <script src="../assets/search-index.js"></script>
+  
+  <script src="../assets/app.js"></script>
+</body>
+</html>

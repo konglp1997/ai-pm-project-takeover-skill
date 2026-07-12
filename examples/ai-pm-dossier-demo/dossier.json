@@ -1,0 +1,231 @@
+{
+  "language": "zh-CN",
+  "title": "SupportLens AI Takeover Dossier",
+  "subtitle": "AI 客服知识副驾 · 合成项目接手案例",
+  "description": "A fictional, searchable AI product takeover dossier demonstrating evidence-led product management.",
+  "version": "0.2.0",
+  "repository": "",
+  "sections": [
+    {
+      "title": "Start",
+      "pages": [
+        {
+          "slug": "index",
+          "title": "SupportLens AI Project Takeover",
+          "summary": "Project identity, current confidence, and takeover entry point.",
+          "minutes": 4,
+          "sources": [],
+          "rationale": "Synthetic portfolio demo; all product names, data, metrics, and evidence are fictional.",
+          "status": "verified",
+          "home": true
+        },
+        {
+          "slug": "executive-brief",
+          "title": "Executive Brief",
+          "summary": "The product, AI value, current state, critical risks, and immediate decisions.",
+          "minutes": 7,
+          "sources": [],
+          "rationale": "Synthetic portfolio demo; all product names, data, metrics, and evidence are fictional.",
+          "status": "verified"
+        },
+        {
+          "slug": "reading-guide",
+          "title": "Reading Guide",
+          "summary": "Executive, AI PM, engineering, leadership, and portfolio reading routes.",
+          "minutes": 7,
+          "sources": [],
+          "rationale": "Synthetic portfolio demo; all product names, data, metrics, and evidence are fictional.",
+          "status": "verified"
+        }
+      ]
+    },
+    {
+      "title": "Product",
+      "pages": [
+        {
+          "slug": "product-context",
+          "title": "Product Context and Users",
+          "summary": "Problem, users, buyer, operators, value proposition, and lifecycle.",
+          "minutes": 7,
+          "sources": [],
+          "rationale": "Synthetic portfolio demo; all product names, data, metrics, and evidence are fictional.",
+          "status": "inferred"
+        },
+        {
+          "slug": "user-journeys",
+          "title": "User Journeys",
+          "summary": "Happy paths, failure recovery, human handoffs, and time-to-value.",
+          "minutes": 7,
+          "sources": [],
+          "rationale": "Synthetic portfolio demo; all product names, data, metrics, and evidence are fictional.",
+          "status": "verified"
+        },
+        {
+          "slug": "capability-map",
+          "title": "Capability Map",
+          "summary": "User outcomes, capabilities, AI contribution, scope, and rollout state.",
+          "minutes": 7,
+          "sources": [],
+          "rationale": "Synthetic portfolio demo; all product names, data, metrics, and evidence are fictional.",
+          "status": "inferred"
+        }
+      ]
+    },
+    {
+      "title": "AI System",
+      "pages": [
+        {
+          "slug": "ai-system",
+          "title": "AI System Map",
+          "summary": "Models, prompts, retrieval, agents, tools, controls, and fallbacks.",
+          "minutes": 7,
+          "sources": [],
+          "rationale": "Synthetic portfolio demo; all product names, data, metrics, and evidence are fictional.",
+          "status": "verified"
+        },
+        {
+          "slug": "data-knowledge",
+          "title": "Data and Knowledge",
+          "summary": "Sources, lineage, freshness, privacy, retrieval, memory, and feedback.",
+          "minutes": 7,
+          "sources": [],
+          "rationale": "Synthetic portfolio demo; all product names, data, metrics, and evidence are fictional.",
+          "status": "supported"
+        },
+        {
+          "slug": "evaluation-guardrails",
+          "title": "Evaluation and Guardrails",
+          "summary": "Quality evidence, release gates, safety, trust, and human oversight.",
+          "minutes": 7,
+          "sources": [],
+          "rationale": "Synthetic portfolio demo; all product names, data, metrics, and evidence are fictional.",
+          "status": "inferred"
+        }
+      ]
+    },
+    {
+      "title": "Measurement",
+      "pages": [
+        {
+          "slug": "metrics-scorecard",
+          "title": "Metrics Scorecard",
+          "summary": "Business, product, AI quality, safety, and system metrics.",
+          "minutes": 7,
+          "sources": [],
+          "rationale": "Synthetic portfolio demo; all product names, data, metrics, and evidence are fictional.",
+          "status": "supported"
+        },
+        {
+          "slug": "economics-performance",
+          "title": "Economics and Performance",
+          "summary": "Cost per task, latency, reliability, capacity, and value assumptions.",
+          "minutes": 7,
+          "sources": [],
+          "rationale": "Synthetic portfolio demo; all product names, data, metrics, and evidence are fictional.",
+          "status": "inferred"
+        }
+      ]
+    },
+    {
+      "title": "Delivery",
+      "pages": [
+        {
+          "slug": "architecture-integrations",
+          "title": "Architecture and Integrations",
+          "summary": "Runtime boundaries, dependencies, contracts, and ownership.",
+          "minutes": 7,
+          "sources": [],
+          "rationale": "Synthetic portfolio demo; all product names, data, metrics, and evidence are fictional.",
+          "status": "verified"
+        },
+        {
+          "slug": "operations-dependencies",
+          "title": "Operations and Dependencies",
+          "summary": "Deployment, observability, incidents, vendors, and hidden manual work.",
+          "minutes": 7,
+          "sources": [],
+          "rationale": "Synthetic portfolio demo; all product names, data, metrics, and evidence are fictional.",
+          "status": "supported"
+        }
+      ]
+    },
+    {
+      "title": "Direction",
+      "pages": [
+        {
+          "slug": "current-state-roadmap",
+          "title": "Current State and Roadmap",
+          "summary": "What is live, limited, partial, planned, deprecated, or unknown.",
+          "minutes": 7,
+          "sources": [],
+          "rationale": "Synthetic portfolio demo; all product names, data, metrics, and evidence are fictional.",
+          "status": "inferred"
+        },
+        {
+          "slug": "product-debt",
+          "title": "Product Debt",
+          "summary": "Evidence, instrumentation, workflow, evaluation, and decision debt.",
+          "minutes": 7,
+          "sources": [],
+          "rationale": "Synthetic portfolio demo; all product names, data, metrics, and evidence are fictional.",
+          "status": "supported"
+        }
+      ]
+    },
+    {
+      "title": "Takeover",
+      "pages": [
+        {
+          "slug": "risks-unknowns",
+          "title": "Risks and Unknowns",
+          "summary": "Prioritized product, AI, data, delivery, and governance risks.",
+          "minutes": 7,
+          "sources": [],
+          "rationale": "Synthetic portfolio demo; all product names, data, metrics, and evidence are fictional.",
+          "status": "unknown"
+        },
+        {
+          "slug": "stakeholder-agenda",
+          "title": "Stakeholder Agenda",
+          "summary": "Questions, owners, evidence requests, and decision meetings.",
+          "minutes": 7,
+          "sources": [],
+          "rationale": "Synthetic portfolio demo; all product names, data, metrics, and evidence are fictional.",
+          "status": "unknown"
+        },
+        {
+          "slug": "takeover-plan",
+          "title": "30 / 60 / 90 Day Plan",
+          "summary": "Outcomes, actions, dependencies, owners, and exit criteria.",
+          "minutes": 7,
+          "sources": [],
+          "rationale": "Synthetic portfolio demo; all product names, data, metrics, and evidence are fictional.",
+          "status": "inferred"
+        }
+      ]
+    },
+    {
+      "title": "Reference",
+      "pages": [
+        {
+          "slug": "drift-register",
+          "title": "Drift Register",
+          "summary": "Contradictions across narrative, docs, code, configuration, and runtime evidence.",
+          "minutes": 7,
+          "sources": [],
+          "rationale": "Synthetic portfolio demo; all product names, data, metrics, and evidence are fictional.",
+          "status": "supported"
+        },
+        {
+          "slug": "glossary-sources",
+          "title": "Glossary and Source Map",
+          "summary": "Canonical terms, definitions, sources, owners, freshness, and confidence.",
+          "minutes": 7,
+          "sources": [],
+          "rationale": "Synthetic portfolio demo; all product names, data, metrics, and evidence are fictional.",
+          "status": "verified"
+        }
+      ]
+    }
+  ]
+}

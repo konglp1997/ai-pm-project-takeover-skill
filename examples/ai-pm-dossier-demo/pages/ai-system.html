@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Models, prompts, retrieval, agents, tools, controls, and fallbacks.">
+  <title>AI System Map · SupportLens AI Takeover Dossier</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <script>window.__DOSSIER_BASE__="../";</script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">跳到正文</a>
+  <div class="scrim" data-menu-close></div>
+  <div class="layout">
+    <aside class="sidebar" id="sidebar"><div class="brand"><a href="../index.html"><strong>SupportLens AI Takeover Dossier</strong><span>AI 客服知识副驾 · 合成项目接手案例</span></a></div><nav aria-label="Handbook chapters"><section class="nav-section"><h2>Start</h2><a class="nav-link" href="../index.html"><span class="nav-number">01</span><span>SupportLens AI Project Takeover</span></a><a class="nav-link" href="executive-brief.html"><span class="nav-number">02</span><span>Executive Brief</span></a><a class="nav-link" href="reading-guide.html"><span class="nav-number">03</span><span>Reading Guide</span></a></section><section class="nav-section"><h2>Product</h2><a class="nav-link" href="product-context.html"><span class="nav-number">04</span><span>Product Context and Users</span></a><a class="nav-link" href="user-journeys.html"><span class="nav-number">05</span><span>User Journeys</span></a><a class="nav-link" href="capability-map.html"><span class="nav-number">06</span><span>Capability Map</span></a></section><section class="nav-section"><h2>AI System</h2><a class="nav-link current" href="ai-system.html" aria-current="page"><span class="nav-number">07</span><span>AI System Map</span></a><a class="nav-link" href="data-knowledge.html"><span class="nav-number">08</span><span>Data and Knowledge</span></a><a class="nav-link" href="evaluation-guardrails.html"><span class="nav-number">09</span><span>Evaluation and Guardrails</span></a></section><section class="nav-section"><h2>Measurement</h2><a class="nav-link" href="metrics-scorecard.html"><span class="nav-number">10</span><span>Metrics Scorecard</span></a><a class="nav-link" href="economics-performance.html"><span class="nav-number">11</span><span>Economics and Performance</span></a></section><section class="nav-section"><h2>Delivery</h2><a class="nav-link" href="architecture-integrations.html"><span class="nav-number">12</span><span>Architecture and Integrations</span></a><a class="nav-link" href="operations-dependencies.html"><span class="nav-number">13</span><span>Operations and Dependencies</span></a></section><section class="nav-section"><h2>Direction</h2><a class="nav-link" href="current-state-roadmap.html"><span class="nav-number">14</span><span>Current State and Roadmap</span></a><a class="nav-link" href="product-debt.html"><span class="nav-number">15</span><span>Product Debt</span></a></section><section class="nav-section"><h2>Takeover</h2><a class="nav-link" href="risks-unknowns.html"><span class="nav-number">16</span><span>Risks and Unknowns</span></a><a class="nav-link" href="stakeholder-agenda.html"><span class="nav-number">17</span><span>Stakeholder Agenda</span></a><a class="nav-link" href="takeover-plan.html"><span class="nav-number">18</span><span>30 / 60 / 90 Day Plan</span></a></section><section class="nav-section"><h2>Reference</h2><a class="nav-link" href="drift-register.html"><span class="nav-number">19</span><span>Drift Register</span></a><a class="nav-link" href="glossary-sources.html"><span class="nav-number">20</span><span>Glossary and Source Map</span></a></section></nav></aside>
+    <main class="main" id="main-content">
+      <header class="topbar">
+        <button class="icon-button menu-button" type="button" data-menu-toggle aria-controls="sidebar" aria-expanded="false">目录</button>
+        <p class="breadcrumbs">AI System / AI System Map</p>
+        <button class="search-button" type="button" data-search-open>搜索 <kbd>⌘K</kbd></button>
+        <button class="icon-button" type="button" data-theme-toggle>明暗</button>
+        <span class="progress" aria-hidden="true"><span data-progress></span></span>
+      </header>
+      <div class="content-layout">
+        <article class="article">
+          <header class="page-header">
+            <p class="eyebrow">AI System</p>
+            <p class="status-line"><span class="evidence e3">E3 · Verified</span></p>
+            <h1>AI System Map</h1>
+            <p class="page-summary">Models, prompts, retrieval, agents, tools, controls, and fallbacks.</p>
+            <p class="page-meta">约 7 分钟 · 第 7 / 20 页</p>
+            <div class="page-sources"><span>页面依据</span><p>Synthetic portfolio demo; all product names, data, metrics, and evidence are fictional.</p></div>
+          </header>
+          <h2 id="端到端-ai-链路"><a class="heading-anchor" href="#端到端-ai-链路" aria-label="Link to 端到端 AI 链路">#</a>端到端 AI 链路</h2>
+<pre><code>工单事件
+  → 租户与权限上下文
+  → 意图 / 风险路由
+  → 混合检索 → 重排 → 证据包
+  → 提示词编排 → 生成模型 → 结构化校验
+  → 引用 / 策略 / PII 检查
+  → 人工确认或安全回退
+  → 反馈、观测、离线评估</code></pre>
+
+<h2 id="组件与责任"><a class="heading-anchor" href="#组件与责任" aria-label="Link to 组件与责任">#</a>组件与责任</h2>
+<div class="table-scroll"><table><thead><tr><th>组件</th><th>责任</th><th>关键控制</th><th>失败回退</th></tr></thead><tbody>
+  <tr><td>路由器</td><td>识别场景与风险</td><td>版本化规则 + 小模型分类</td><td>未知场景进入人工模式</td></tr>
+  <tr><td>RAG</td><td>构建可引用证据包</td><td>租户 ACL、时间、版本过滤</td><td>证据不足则拒答</td></tr>
+  <tr><td>生成器</td><td>生成回复草稿</td><td>系统提示、结构化输出、温度约束</td><td>一次重试后降级</td></tr>
+  <tr><td>工具代理</td><td>只读查询外部系统</td><td>白名单、参数校验、超时、审计</td><td>返回人工操作指引</td></tr>
+  <tr><td>守卫层</td><td>检查引用、策略与敏感内容</td><td>规则 + 模型双层检查</td><td>阻断发送并说明原因</td></tr>
+</tbody></table></div>
+
+<h2 id="prompt-管理"><a class="heading-anchor" href="#prompt-管理" aria-label="Link to Prompt 管理">#</a>Prompt 管理</h2>
+<ul>
+  <li>系统策略、场景模板、租户语气和输出 schema 分离版本管理。</li>
+  <li>每次线上响应记录 prompt 版本、模型版本、检索配置和策略版本，禁止记录真实密钥。</li>
+  <li>提示词变更必须经过回归评测；不能把“措辞优化”视为低风险文案改动。</li>
+</ul>
+
+<h2 id="agent-边界"><a class="heading-anchor" href="#agent-边界" aria-label="Link to Agent 边界">#</a>Agent 边界</h2>
+<p><span class="evidence e3">E3 · Verified</span> 当前 agent 只允许规划并调用只读工具；任何改变客户权益或账户状态的动作都需要确定性权限校验和人工确认。最大工具步数、时间预算和重复调用检测用于防止循环。</p>
+
+<h2 id="模型策略"><a class="heading-anchor" href="#模型策略" aria-label="Link to 模型策略">#</a>模型策略</h2>
+<p>按任务路由模型：分类与抽取优先低成本模型，复杂综合使用高能力模型；供应商切换必须通过同一评测集和输出契约，避免“能调用”被误解为“可替换”。</p>
+
+          <nav class="pager" aria-label="Page navigation"><a class="pager-item previous" href="capability-map.html"><span>上一篇</span><strong>Capability Map</strong></a><a class="pager-item next" href="data-knowledge.html"><span>下一篇</span><strong>Data and Knowledge</strong></a></nav>
+        </article>
+        <aside class="page-toc" aria-label="On this page"><h2>本页目录</h2><ol><li class="level-2"><a href="#端到端-ai-链路">端到端 AI 链路</a></li><li class="level-2"><a href="#组件与责任">组件与责任</a></li><li class="level-2"><a href="#prompt-管理">Prompt 管理</a></li><li class="level-2"><a href="#agent-边界">Agent 边界</a></li><li class="level-2"><a href="#模型策略">模型策略</a></li></ol></aside>
+      </div>
+    </main>
+  </div>
+  <div class="search-dialog" role="dialog" aria-modal="true" aria-label="搜索手册" hidden>
+    <div class="search-panel">
+      <label for="search-input">搜索手册</label>
+      <input id="search-input" type="search" autocomplete="off" placeholder="输入页面、概念或命令">
+      <div class="search-results" aria-live="polite"></div>
+      <button type="button" class="search-close" data-search-close>关闭</button>
+    </div>
+  </div>
+  <script src="../assets/search-index.js"></script>
+  
+  <script src="../assets/app.js"></script>
+</body>
+</html>
