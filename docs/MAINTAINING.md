@@ -12,7 +12,7 @@
 1. 把触发场景写在 frontmatter `description`。
 2. `SKILL.md` 只保留流程、路由和硬规则。
 3. 详细方法放一层 `references/`，从 `SKILL.md` 直接链接。
-4. 仓库 README、面试和维护资料不放进 Skill 目录。
+4. 仓库 README 和维护资料不放进 Skill 目录。
 5. 更新后检查 `agents/openai.yaml` 与 Skill 名和提示一致。
 
 ## 修改 AI PM 框架
@@ -51,12 +51,12 @@ python3 ~/.codex/skills/.system/skill-creator/scripts/quick_validate.py skill/ai
 
 ## 视觉回归
 
-检查 Executive、AI System、Metrics、Risks 和 Takeover Plan 页面；覆盖桌面、窄屏、明暗主题、搜索、长表格、键盘焦点和打印。Mermaid 必须真实渲染验证。
+检查管理摘要、AI 系统、指标、风险和接手计划页面；覆盖桌面、窄屏、明暗主题、搜索、长表格、键盘焦点和打印。Mermaid 必须真实渲染验证。
 
 ## 发布
 
 1. 更新 CHANGELOG 和 ROADMAP。
 2. 运行测试、Skill 校验、示例构建和全局残留扫描。
-3. 检查 README、USAGE、ARCHITECTURE、OUTPUT-SPEC 和 INTERVIEW-GUIDE。
+3. 检查 README、USAGE、ARCHITECTURE、OUTPUT-SPEC 和 PROJECT-OVERVIEW。
 4. 检查 demo 不含公司或个人敏感信息。
 5. 提交、推送、确认 CI，按需发布版本标签。

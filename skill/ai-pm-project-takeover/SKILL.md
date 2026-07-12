@@ -1,6 +1,6 @@
 ---
 name: ai-pm-project-takeover
-description: Take over an unfamiliar AI product as an AI product manager by auditing its product documents, repository, prompts, models, agents, RAG pipelines, data, evaluations, metrics, architecture, operations, roadmap, risks, and stakeholder gaps. Use when Codex needs to help an AI PM 接手新项目、梳理完整项目、做产品与技术尽调、准备交接材料、建立 AI 能力地图、识别产品债和未知问题、制定 30/60/90 天计划，or create an evidence-backed project dossier for onboarding, portfolio reviews, or interviews. Produces structured takeover notes and a searchable offline AI PM dossier without presenting inference as fact.
+description: Take over an unfamiliar AI product as an AI product manager by auditing its product documents, repository, prompts, models, agents, RAG pipelines, data, evaluations, metrics, architecture, operations, roadmap, risks, and stakeholder gaps. Use when Codex needs to help an AI PM 接手新项目、梳理完整项目、做产品与技术尽调、准备交接材料、建立 AI 能力地图、识别产品债和未知问题、制定 30/60/90 天计划，or create an evidence-backed project dossier for onboarding and stakeholder alignment. Produces structured takeover notes and a searchable offline AI PM dossier without presenting inference as fact.
 ---
 
 # AI PM Project Takeover
@@ -11,8 +11,8 @@ Take over an unfamiliar AI product from evidence to action. Build an AI product 
 
 Produce two coordinated deliverables:
 
-1. `takeover-notes/`: working evidence, gaps, decisions, and interview questions.
-2. `ai-pm-dossier/`: a polished offline handbook for daily work, stakeholder alignment, portfolio review, and interviews.
+1. `takeover-notes/`: working evidence, gaps, decisions, and stakeholder questions.
+2. `ai-pm-dossier/`: a polished offline handbook for daily work, onboarding, decision-making, and stakeholder alignment.
 
 The dossier must explain:
 
@@ -173,7 +173,7 @@ Report:
 - Files created and validation results.
 - Checks not performed and why.
 
-Prepare an executive explanation that separates product thinking, AI-system thinking, and implementation design. Do not expose confidential project content in public portfolio or interview material.
+Prepare an executive explanation that separates product thinking, AI-system thinking, and implementation design. Do not expose confidential project content in externally shared material.
 
 ## Resource map
 
@@ -197,4 +197,4 @@ Prepare an executive explanation that separates product thinking, AI-system thin
 - Do not recommend roadmap priority without evidence, decision impact, and uncertainty.
 - Do not claim an AI capability is evaluated because tests merely execute it.
 - Do not edit generated HTML; edit `dossier.json` or `content/` and rebuild.
-- Do not publish a real company's dossier as a portfolio artifact without authorization and redaction.
+- Do not share a real company's dossier externally without authorization and redaction.

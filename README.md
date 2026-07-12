@@ -1,4 +1,4 @@
-# AI PM Project Takeover Skill
+# AI 产品经理项目接手 Skill
 
 把一个陌生 AI 项目的文档、代码、Prompt、模型、RAG、Agent、数据、评测、指标和路线图，转化为 AI 产品经理可以直接使用的“项目接手操作系统”。
 
@@ -37,7 +37,7 @@ takeover-notes/
 
 默认包含 20 个章节：
 
-- Executive Brief 与阅读路线。
+- 管理摘要与阅读路线。
 - 产品背景、用户、价值主张、旅程和能力地图。
 - AI 系统、Prompt/RAG/Agent/工具、数据与知识架构。
 - 评测、Guardrails、人工审核和反馈闭环。
@@ -53,10 +53,10 @@ takeover-notes/
 
 | 等级 | 含义 | 写法 |
 |---|---|---|
-| E3 · Verified | 多个当前来源，或运行/指标直接验证 | “产品当前会……” |
-| E2 · Supported | 一个强当前来源 | “当前证据表明……” |
-| E1 · Inferred | 间接或不完整证据 | “推测……，需与……确认” |
-| E0 · Unknown | 缺失或互相矛盾 | “未知；在……前必须确认” |
+| E3 · 已验证 | 多个当前来源，或运行/指标直接验证 | “产品当前会……” |
+| E2 · 有依据 | 一个强当前来源 | “当前证据表明……” |
+| E1 · 推断 | 间接或不完整证据 | “推测……，需与……确认” |
+| E0 · 未知 | 缺失或互相矛盾 | “未知；在……前必须确认” |
 
 未知不是失败。高影响的 E0/E1 会被转化为访谈问题、实验、埋点任务、评测任务或路线图风险。
 
@@ -114,15 +114,15 @@ python3 skill/ai-pm-project-takeover/scripts/verify_dossier.py ./ai-pm-dossier
 
 打开 [`examples/ai-pm-dossier-demo/index.html`](examples/ai-pm-dossier-demo/index.html) 查看完整 20 页档案结构。
 
-## 作品集与面试
+## 项目解读
 
-这个项目可以从三个层面讲解：
+这个项目由三个相互配合的层面组成：
 
 1. **产品层：** 发现 AI PM 项目接手不是“读文档”，而是建立可信决策模型。
 2. **AI 层：** 把模型、Prompt、RAG、Agent、数据、评测、Guardrails 和人机协作放进同一产品框架。
 3. **工程层：** 用 Skill 负责编排与判断，用 Python 负责确定性构建和验证，用离线站点负责交付。
 
-面试讲解脚本、常见追问和演示顺序见 [INTERVIEW-GUIDE.md](docs/INTERVIEW-GUIDE.md)。
+完整项目定位、能力、架构、质量保证和使用流程见 [项目说明书](docs/PROJECT-OVERVIEW.md)。
 
 ## 项目结构
 
@@ -149,7 +149,7 @@ ai-pm-project-takeover-skill/
 - [系统架构](docs/ARCHITECTURE.md)
 - [设计决策](docs/DESIGN-DECISIONS.md)
 - [输出规范](docs/OUTPUT-SPEC.md)
-- [面试讲解指南](docs/INTERVIEW-GUIDE.md)
+- [项目说明书](docs/PROJECT-OVERVIEW.md)
 - [产品路线图](docs/ROADMAP.md)
 - [维护与版本](docs/MAINTAINING.md)
 - [发布到 GitHub](docs/PUBLISHING.md)
@@ -162,6 +162,6 @@ python3 -m unittest discover -s tests -v
 python3 ~/.codex/skills/.system/skill-creator/scripts/quick_validate.py skill/ai-pm-project-takeover
 ```
 
-## License
+## 许可证
 
 [MIT License](LICENSE) © 2026 konglp1997

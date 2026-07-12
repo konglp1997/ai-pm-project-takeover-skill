@@ -38,7 +38,7 @@ cp -R skill/ai-pm-project-takeover ~/.codex/skills/ai-pm-project-takeover
 评测、指标、架构、运维和组织协作角度完成系统尽调。
 
 要求：
-1. 先选择 Product-led、Hybrid audit 或 Evidence recovery 路线并解释原因。
+1. 先选择产品资料驱动、混合审计或证据恢复路线并解释原因。
 2. 建立 takeover-notes/，记录资料清单、证据台账、文档漂移和未知问题。
 3. 所有重要结论使用 E3/E2/E1/E0 置信度，不要把推断或路线图写成已上线事实。
 4. 梳理用户、买方、管理员、运营、审核者和下游消费者。
@@ -55,7 +55,7 @@ cp -R skill/ai-pm-project-takeover ~/.codex/skills/ai-pm-project-takeover
 
 ```text
 使用 $ai-pm-project-takeover 对当前项目做一天内可完成的快速接手。
-优先输出 Executive Brief、产品与用户、AI 系统图、当前能力状态、指标缺口、
+优先输出管理摘要、产品与用户、AI 系统图、当前能力状态、指标缺口、
 Top 10 风险/未知问题、关键利益相关方问题和前 30 天计划。
 深度不足的内容标 E0/E1，不要猜测。
 ```
@@ -63,19 +63,10 @@ Top 10 风险/未知问题、关键利益相关方问题和前 30 天计划。
 ## 只有代码、没有产品文档
 
 ```text
-使用 $ai-pm-project-takeover 按 Evidence recovery 路线接手当前项目。
+使用 $ai-pm-project-takeover 按证据恢复路线接手当前项目。
 从入口、前端路由、API、Prompt、模型配置、Agent/RAG、Schema、测试、部署和历史
 反推当前产品行为。业务目标、用户价值和路线图无法从仓库确认时，整理为高优先级
 利益相关方问题，不要自行补全。
-```
-
-## 作品集安全模式
-
-```text
-使用 $ai-pm-project-takeover 基于当前项目制作一份公开作品集案例。
-保留问题框架、方法、设计决策、架构、验证、权衡和学习；删除或泛化公司名称、
-客户数据、真实指标、Prompt、私有模型、内部路径、端点、供应商和商业机密。
-任何无法公开的内容不要进入搜索索引和截图。
 ```
 
 ## 你需要参与的检查点
@@ -125,19 +116,19 @@ python3 skill/ai-pm-project-takeover/scripts/verify_dossier.py ./ai-pm-dossier
 ```json
 {
   "language": "zh-CN",
-  "title": "AI Product Takeover Dossier",
-  "subtitle": "Evidence-backed AI PM operating model",
-  "description": "Project takeover dossier",
+  "title": "AI 产品项目接手档案",
+  "subtitle": "证据驱动的 AI 产品管理工作模型",
+  "description": "AI 产品项目接手档案",
   "version": "0.1.0",
   "repository": "",
   "sections": [
     {
-      "title": "Start",
+      "title": "开始",
       "pages": [
         {
           "slug": "index",
-          "title": "AI Product Takeover",
-          "summary": "Project identity and takeover entry point.",
+          "title": "AI 产品项目接手总览",
+          "summary": "项目身份与接手入口。",
           "minutes": 4,
           "home": true,
           "sources": ["README.md"],
@@ -161,6 +152,6 @@ python3 skill/ai-pm-project-takeover/scripts/verify_dossier.py ./ai-pm-dossier
 ## 安全边界
 
 - 不要把真实 `.env`、Token、客户数据或私有 Prompt 写入档案。
-- 内部档案和公开作品集必须分开。
+- 内部档案和对外共享材料必须分开保存并独立审查。
 - 自动秘密扫描不是安全证明，公开前人工检查 `content/`、生成页面和搜索索引。
 - 不要为了理解项目擅自执行迁移、部署、生产访问或外部写操作。

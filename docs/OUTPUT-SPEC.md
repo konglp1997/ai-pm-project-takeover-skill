@@ -41,7 +41,7 @@
 |---|---|
 | `index` | 项目身份、证据路线、当前置信度、下一决策 |
 | `executive-brief` | 产品、AI 价值、状态、风险、优先事项 |
-| `reading-guide` | Executive、AI PM、工程/算法、领导、面试路线 |
+| `reading-guide` | 管理层、AI 产品经理、工程/算法和跨职能评审路线 |
 | `product-context` | 用户、买方、角色、问题、价值、阶段、边界 |
 | `user-journeys` | Happy path、失败恢复、人机交接、可观测事件 |
 | `capability-map` | 用户结果、能力、AI 贡献、上线状态、缺口 |

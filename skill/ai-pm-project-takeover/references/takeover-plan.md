@@ -61,7 +61,7 @@ Typical outcomes:
 
 Keep actions tied to decisions. Avoid a generic activity list.
 
-## Stakeholder interview agenda
+## Stakeholder validation agenda
 
 Tailor questions:
 

@@ -53,9 +53,9 @@ If Mermaid is used, confirm each block becomes SVG. Report honestly when browser
 
 Inspect content, config, generated pages, search index, diagrams, and screenshots for credentials, customer data, private prompts, proprietary datasets, internal hosts, personal paths, signed URLs, and unapproved metrics.
 
-Internal dossier and public portfolio case study must be separate when confidentiality applies.
+The internal dossier and externally shared material must be separate when confidentiality applies.
 
-## 7. Interview gate
+## 7. Delivery explanation gate
 
 Be able to explain:
 

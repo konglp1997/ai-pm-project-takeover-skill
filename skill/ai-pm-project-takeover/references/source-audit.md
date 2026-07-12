@@ -44,7 +44,7 @@ Assign confidence to important claims, not every sentence. Lower confidence when
 
 | ID | Claim | Type | Evidence | Confidence | Decision impact | Next validation |
 |---|---|---|---|---|---|---|
-| C-01 | New users reach first value through document upload | User journey | `src/routes/upload`, onboarding design | E2 | High | Check activation events and interviews |
+| C-01 | New users reach first value through document upload | User journey | `src/routes/upload`, onboarding design | E2 | High | Check activation events and user research |
 | C-02 | Responses meet expert quality threshold | AI quality | No evaluation set found | E0 | Critical | Define rubric and sample production tasks |
 
 ## Drift register
@@ -68,8 +68,8 @@ Common drift:
 
 - Never copy real secrets, customer records, private prompts, proprietary datasets, internal hosts, credentials, or signed URLs.
 - Record environment variable names with placeholders.
-- Aggregate or synthesize user examples for public portfolio material.
-- Keep company dossier and public interview case study as separate artifacts.
+- Aggregate or synthesize user examples for externally shared material.
+- Keep the internal company dossier and externally shared material as separate artifacts.
 - Treat screenshots and generated search indexes as potential data exports.
 
 ## Completion gate

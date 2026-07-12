@@ -54,7 +54,7 @@ def process_headings(fragment: str) -> tuple[str, list[dict[str, Any]]]:
         else:
             attrs += f' id="{html.escape(anchor, quote=True)}"'
         toc.append({"level": int(tag[1]), "id": anchor, "text": text})
-        label = html.escape(f"Link to {text}", quote=True)
+        label = html.escape(f"链接到{text}", quote=True)
         return f'<{tag}{attrs}><a class="heading-anchor" href="#{html.escape(anchor, quote=True)}" aria-label="{label}">#</a>{body}</{tag}>'
 
     return HEADING_RE.sub(replace, fragment), toc
@@ -96,7 +96,7 @@ def sidebar(config: dict[str, Any], current: dict[str, Any], by_slug: dict[str, 
     return (
         f'<div class="brand"><a href="{html.escape(relative_url(current["url"], home["url"]), quote=True)}">'
         f'<strong>{html.escape(config["title"])}</strong><span>{html.escape(config["subtitle"])}</span></a></div>'
-        f'<nav aria-label="Handbook chapters">{"".join(groups)}</nav>'
+        f'<nav aria-label="档案章节">{"".join(groups)}</nav>'
     )
 
 
@@ -107,7 +107,7 @@ def toc_html(toc: list[dict[str, Any]]) -> str:
         f'<li class="level-{x["level"]}"><a href="#{html.escape(x["id"], quote=True)}">{html.escape(x["text"])}</a></li>'
         for x in toc
     )
-    return f'<aside class="page-toc" aria-label="On this page"><h2>本页目录</h2><ol>{items}</ol></aside>'
+    return f'<aside class="page-toc" aria-label="本页目录"><h2>本页目录</h2><ol>{items}</ol></aside>'
 
 
 def sources_html(page: dict[str, Any]) -> str:
@@ -122,10 +122,10 @@ def sources_html(page: dict[str, Any]) -> str:
 def status_html(page: dict[str, Any]) -> str:
     status = page.get("status")
     labels = {
-        "verified": ("e3", "E3 · Verified"),
-        "supported": ("e2", "E2 · Supported"),
-        "inferred": ("e1", "E1 · Inferred"),
-        "unknown": ("e0", "E0 · Unknown"),
+        "verified": ("e3", "E3 · 已验证"),
+        "supported": ("e2", "E2 · 有依据"),
+        "inferred": ("e1", "E1 · 推断"),
+        "unknown": ("e0", "E0 · 未知"),
     }
     if status not in labels:
         return ""

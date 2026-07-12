@@ -15,7 +15,7 @@ git status
 - README 和示例使用新品牌。
 - 没有真实公司、客户、Prompt、指标、内部路径、Token 或私有架构。
 - Demo 是虚构/匿名化案例。
-- CI、License、Security、Contributing、Roadmap 和 Interview Guide 齐全。
+- CI、许可证、安全政策、贡献指南、路线图和项目说明书齐全。
 
 ## 新仓库推送
 
@@ -38,9 +38,9 @@ git remote set-url origin https://github.com/<你的用户名>/ai-pm-project-tak
 git push
 ```
 
-GitHub 通常会保留旧 URL 重定向，但 README、Clone 命令和作品集链接应使用新地址。
+GitHub 通常会保留旧 URL 重定向，但 README、克隆命令和对外链接应使用新地址。
 
-## Release
+## 发布版本
 
 ```bash
 git tag -a v0.2.0 -m "AI PM Project Takeover v0.2.0"

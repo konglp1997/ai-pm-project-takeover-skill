@@ -1,4 +1,4 @@
 interface:
-  display_name: "AI PM Project Takeover"
-  short_description: "Audit and take over an unfamiliar AI product"
-  default_prompt: "Use $ai-pm-project-takeover to audit this AI product and create an evidence-backed takeover dossier."
+  display_name: "AI 产品经理项目接手"
+  short_description: "系统审计并接手陌生 AI 产品"
+  default_prompt: "使用 $ai-pm-project-takeover 审计当前 AI 产品，并创建有证据支持的项目接手档案。"

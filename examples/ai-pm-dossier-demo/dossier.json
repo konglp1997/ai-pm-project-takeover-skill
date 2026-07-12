@@ -1,228 +1,228 @@
 {
   "language": "zh-CN",
-  "title": "SupportLens AI Takeover Dossier",
+  "title": "SupportLens AI 项目接手档案",
   "subtitle": "AI 客服知识副驾 · 合成项目接手案例",
-  "description": "A fictional, searchable AI product takeover dossier demonstrating evidence-led product management.",
-  "version": "0.2.0",
+  "description": "一个展示证据驱动 AI 产品管理方法的虚构、可搜索项目接手档案。",
+  "version": "0.2.1",
   "repository": "",
   "sections": [
     {
-      "title": "Start",
+      "title": "开始",
       "pages": [
         {
           "slug": "index",
-          "title": "SupportLens AI Project Takeover",
-          "summary": "Project identity, current confidence, and takeover entry point.",
+          "title": "SupportLens AI 项目接手总览",
+          "summary": "项目身份、当前置信度与接手入口。",
           "minutes": 4,
           "sources": [],
-          "rationale": "Synthetic portfolio demo; all product names, data, metrics, and evidence are fictional.",
+          "rationale": "虚构演示案例；所有产品名称、数据、指标和证据均为合成内容。",
           "status": "verified",
           "home": true
         },
         {
           "slug": "executive-brief",
-          "title": "Executive Brief",
-          "summary": "The product, AI value, current state, critical risks, and immediate decisions.",
+          "title": "管理摘要",
+          "summary": "产品、AI 价值、当前状态、关键风险和近期决策。",
           "minutes": 7,
           "sources": [],
-          "rationale": "Synthetic portfolio demo; all product names, data, metrics, and evidence are fictional.",
+          "rationale": "虚构演示案例；所有产品名称、数据、指标和证据均为合成内容。",
           "status": "verified"
         },
         {
           "slug": "reading-guide",
-          "title": "Reading Guide",
-          "summary": "Executive, AI PM, engineering, leadership, and portfolio reading routes.",
+          "title": "阅读指南",
+          "summary": "管理层、AI 产品经理和工程算法团队的阅读路线。",
           "minutes": 7,
           "sources": [],
-          "rationale": "Synthetic portfolio demo; all product names, data, metrics, and evidence are fictional.",
+          "rationale": "虚构演示案例；所有产品名称、数据、指标和证据均为合成内容。",
           "status": "verified"
         }
       ]
     },
     {
-      "title": "Product",
+      "title": "产品",
       "pages": [
         {
           "slug": "product-context",
-          "title": "Product Context and Users",
-          "summary": "Problem, users, buyer, operators, value proposition, and lifecycle.",
+          "title": "产品背景与用户",
+          "summary": "问题、用户、购买者、运营角色、价值主张和生命周期。",
           "minutes": 7,
           "sources": [],
-          "rationale": "Synthetic portfolio demo; all product names, data, metrics, and evidence are fictional.",
+          "rationale": "虚构演示案例；所有产品名称、数据、指标和证据均为合成内容。",
           "status": "inferred"
         },
         {
           "slug": "user-journeys",
-          "title": "User Journeys",
-          "summary": "Happy paths, failure recovery, human handoffs, and time-to-value.",
+          "title": "用户旅程",
+          "summary": "主流程、失败恢复、人工交接和价值实现时间。",
           "minutes": 7,
           "sources": [],
-          "rationale": "Synthetic portfolio demo; all product names, data, metrics, and evidence are fictional.",
+          "rationale": "虚构演示案例；所有产品名称、数据、指标和证据均为合成内容。",
           "status": "verified"
         },
         {
           "slug": "capability-map",
-          "title": "Capability Map",
-          "summary": "User outcomes, capabilities, AI contribution, scope, and rollout state.",
+          "title": "能力地图",
+          "summary": "用户结果、产品能力、AI 贡献、范围和发布状态。",
           "minutes": 7,
           "sources": [],
-          "rationale": "Synthetic portfolio demo; all product names, data, metrics, and evidence are fictional.",
+          "rationale": "虚构演示案例；所有产品名称、数据、指标和证据均为合成内容。",
           "status": "inferred"
         }
       ]
     },
     {
-      "title": "AI System",
+      "title": "AI 系统",
       "pages": [
         {
           "slug": "ai-system",
-          "title": "AI System Map",
-          "summary": "Models, prompts, retrieval, agents, tools, controls, and fallbacks.",
+          "title": "AI 系统地图",
+          "summary": "模型、提示词、检索、智能体、工具、控制与降级。",
           "minutes": 7,
           "sources": [],
-          "rationale": "Synthetic portfolio demo; all product names, data, metrics, and evidence are fictional.",
+          "rationale": "虚构演示案例；所有产品名称、数据、指标和证据均为合成内容。",
           "status": "verified"
         },
         {
           "slug": "data-knowledge",
-          "title": "Data and Knowledge",
-          "summary": "Sources, lineage, freshness, privacy, retrieval, memory, and feedback.",
+          "title": "数据与知识",
+          "summary": "来源、血缘、新鲜度、隐私、检索、记忆与反馈。",
           "minutes": 7,
           "sources": [],
-          "rationale": "Synthetic portfolio demo; all product names, data, metrics, and evidence are fictional.",
+          "rationale": "虚构演示案例；所有产品名称、数据、指标和证据均为合成内容。",
           "status": "supported"
         },
         {
           "slug": "evaluation-guardrails",
-          "title": "Evaluation and Guardrails",
-          "summary": "Quality evidence, release gates, safety, trust, and human oversight.",
+          "title": "评估与安全护栏",
+          "summary": "质量证据、发布门禁、安全、信任与人工监督。",
           "minutes": 7,
           "sources": [],
-          "rationale": "Synthetic portfolio demo; all product names, data, metrics, and evidence are fictional.",
+          "rationale": "虚构演示案例；所有产品名称、数据、指标和证据均为合成内容。",
           "status": "inferred"
         }
       ]
     },
     {
-      "title": "Measurement",
+      "title": "度量",
       "pages": [
         {
           "slug": "metrics-scorecard",
-          "title": "Metrics Scorecard",
-          "summary": "Business, product, AI quality, safety, and system metrics.",
+          "title": "指标记分卡",
+          "summary": "业务、产品、AI 质量、安全和系统指标。",
           "minutes": 7,
           "sources": [],
-          "rationale": "Synthetic portfolio demo; all product names, data, metrics, and evidence are fictional.",
+          "rationale": "虚构演示案例；所有产品名称、数据、指标和证据均为合成内容。",
           "status": "supported"
         },
         {
           "slug": "economics-performance",
-          "title": "Economics and Performance",
-          "summary": "Cost per task, latency, reliability, capacity, and value assumptions.",
+          "title": "经济性与性能",
+          "summary": "单任务成本、延迟、可靠性、容量与价值假设。",
           "minutes": 7,
           "sources": [],
-          "rationale": "Synthetic portfolio demo; all product names, data, metrics, and evidence are fictional.",
+          "rationale": "虚构演示案例；所有产品名称、数据、指标和证据均为合成内容。",
           "status": "inferred"
         }
       ]
     },
     {
-      "title": "Delivery",
+      "title": "交付",
       "pages": [
         {
           "slug": "architecture-integrations",
-          "title": "Architecture and Integrations",
-          "summary": "Runtime boundaries, dependencies, contracts, and ownership.",
+          "title": "架构与集成",
+          "summary": "运行边界、依赖、接口契约和责任归属。",
           "minutes": 7,
           "sources": [],
-          "rationale": "Synthetic portfolio demo; all product names, data, metrics, and evidence are fictional.",
+          "rationale": "虚构演示案例；所有产品名称、数据、指标和证据均为合成内容。",
           "status": "verified"
         },
         {
           "slug": "operations-dependencies",
-          "title": "Operations and Dependencies",
-          "summary": "Deployment, observability, incidents, vendors, and hidden manual work.",
+          "title": "运维与依赖",
+          "summary": "部署、可观测性、事故、供应商和隐藏人工工作。",
           "minutes": 7,
           "sources": [],
-          "rationale": "Synthetic portfolio demo; all product names, data, metrics, and evidence are fictional.",
+          "rationale": "虚构演示案例；所有产品名称、数据、指标和证据均为合成内容。",
           "status": "supported"
         }
       ]
     },
     {
-      "title": "Direction",
+      "title": "方向",
       "pages": [
         {
           "slug": "current-state-roadmap",
-          "title": "Current State and Roadmap",
-          "summary": "What is live, limited, partial, planned, deprecated, or unknown.",
+          "title": "当前状态与路线图",
+          "summary": "已上线、有限开放、部分完成、规划中、已废弃或未知的内容。",
           "minutes": 7,
           "sources": [],
-          "rationale": "Synthetic portfolio demo; all product names, data, metrics, and evidence are fictional.",
+          "rationale": "虚构演示案例；所有产品名称、数据、指标和证据均为合成内容。",
           "status": "inferred"
         },
         {
           "slug": "product-debt",
-          "title": "Product Debt",
-          "summary": "Evidence, instrumentation, workflow, evaluation, and decision debt.",
+          "title": "产品债务",
+          "summary": "证据、埋点、工作流、评估和决策债务。",
           "minutes": 7,
           "sources": [],
-          "rationale": "Synthetic portfolio demo; all product names, data, metrics, and evidence are fictional.",
+          "rationale": "虚构演示案例；所有产品名称、数据、指标和证据均为合成内容。",
           "status": "supported"
         }
       ]
     },
     {
-      "title": "Takeover",
+      "title": "接手",
       "pages": [
         {
           "slug": "risks-unknowns",
-          "title": "Risks and Unknowns",
-          "summary": "Prioritized product, AI, data, delivery, and governance risks.",
+          "title": "风险与未知问题",
+          "summary": "按优先级整理产品、AI、数据、交付和治理风险。",
           "minutes": 7,
           "sources": [],
-          "rationale": "Synthetic portfolio demo; all product names, data, metrics, and evidence are fictional.",
+          "rationale": "虚构演示案例；所有产品名称、数据、指标和证据均为合成内容。",
           "status": "unknown"
         },
         {
           "slug": "stakeholder-agenda",
-          "title": "Stakeholder Agenda",
-          "summary": "Questions, owners, evidence requests, and decision meetings.",
+          "title": "利益相关方议程",
+          "summary": "问题、负责人、证据请求和决策会议。",
           "minutes": 7,
           "sources": [],
-          "rationale": "Synthetic portfolio demo; all product names, data, metrics, and evidence are fictional.",
+          "rationale": "虚构演示案例；所有产品名称、数据、指标和证据均为合成内容。",
           "status": "unknown"
         },
         {
           "slug": "takeover-plan",
-          "title": "30 / 60 / 90 Day Plan",
-          "summary": "Outcomes, actions, dependencies, owners, and exit criteria.",
+          "title": "30 / 60 / 90 天计划",
+          "summary": "结果、行动、依赖、负责人和退出标准。",
           "minutes": 7,
           "sources": [],
-          "rationale": "Synthetic portfolio demo; all product names, data, metrics, and evidence are fictional.",
+          "rationale": "虚构演示案例；所有产品名称、数据、指标和证据均为合成内容。",
           "status": "inferred"
         }
       ]
     },
     {
-      "title": "Reference",
+      "title": "参考",
       "pages": [
         {
           "slug": "drift-register",
-          "title": "Drift Register",
-          "summary": "Contradictions across narrative, docs, code, configuration, and runtime evidence.",
+          "title": "漂移登记表",
+          "summary": "产品叙事、文档、代码、配置和运行证据之间的矛盾。",
           "minutes": 7,
           "sources": [],
-          "rationale": "Synthetic portfolio demo; all product names, data, metrics, and evidence are fictional.",
+          "rationale": "虚构演示案例；所有产品名称、数据、指标和证据均为合成内容。",
           "status": "supported"
         },
         {
           "slug": "glossary-sources",
-          "title": "Glossary and Source Map",
-          "summary": "Canonical terms, definitions, sources, owners, freshness, and confidence.",
+          "title": "术语与来源地图",
+          "summary": "统一术语、定义、来源、负责人、新鲜度和置信度。",
           "minutes": 7,
           "sources": [],
-          "rationale": "Synthetic portfolio demo; all product names, data, metrics, and evidence are fictional.",
+          "rationale": "虚构演示案例；所有产品名称、数据、指标和证据均为合成内容。",
           "status": "verified"
         }
       ]

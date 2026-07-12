@@ -10,41 +10,41 @@ from pathlib import Path
 
 
 SECTIONS = [
-    ("Start", [
-        ("index", "AI Product Takeover", "Project identity, current confidence, and takeover entry point."),
-        ("executive-brief", "Executive Brief", "The product, AI value, current state, critical risks, and immediate decisions."),
-        ("reading-guide", "Reading Guide", "Executive, AI PM, engineering, leadership, and portfolio reading routes."),
+    ("开始", [
+        ("index", "AI 产品项目接手总览", "项目身份、当前置信度与接手入口。"),
+        ("executive-brief", "管理摘要", "产品、AI 价值、当前状态、关键风险和近期决策。"),
+        ("reading-guide", "阅读指南", "管理层、AI 产品经理和工程算法团队的阅读路线。"),
     ]),
-    ("Product", [
-        ("product-context", "Product Context and Users", "Problem, users, buyer, operators, value proposition, and lifecycle."),
-        ("user-journeys", "User Journeys", "Happy paths, failure recovery, human handoffs, and time-to-value."),
-        ("capability-map", "Capability Map", "User outcomes, capabilities, AI contribution, scope, and rollout state."),
+    ("产品", [
+        ("product-context", "产品背景与用户", "问题、用户、购买者、运营角色、价值主张和生命周期。"),
+        ("user-journeys", "用户旅程", "主流程、失败恢复、人工交接和价值实现时间。"),
+        ("capability-map", "能力地图", "用户结果、产品能力、AI 贡献、范围和发布状态。"),
     ]),
-    ("AI System", [
-        ("ai-system", "AI System Map", "Models, prompts, retrieval, agents, tools, controls, and fallbacks."),
-        ("data-knowledge", "Data and Knowledge", "Sources, lineage, freshness, privacy, retrieval, memory, and feedback."),
-        ("evaluation-guardrails", "Evaluation and Guardrails", "Quality evidence, release gates, safety, trust, and human oversight."),
+    ("AI 系统", [
+        ("ai-system", "AI 系统地图", "模型、提示词、检索、智能体、工具、控制与降级。"),
+        ("data-knowledge", "数据与知识", "来源、血缘、新鲜度、隐私、检索、记忆与反馈。"),
+        ("evaluation-guardrails", "评估与安全护栏", "质量证据、发布门禁、安全、信任与人工监督。"),
     ]),
-    ("Measurement", [
-        ("metrics-scorecard", "Metrics Scorecard", "Business, product, AI quality, safety, and system metrics."),
-        ("economics-performance", "Economics and Performance", "Cost per task, latency, reliability, capacity, and value assumptions."),
+    ("度量", [
+        ("metrics-scorecard", "指标记分卡", "业务、产品、AI 质量、安全和系统指标。"),
+        ("economics-performance", "经济性与性能", "单任务成本、延迟、可靠性、容量与价值假设。"),
     ]),
-    ("Delivery", [
-        ("architecture-integrations", "Architecture and Integrations", "Runtime boundaries, dependencies, contracts, and ownership."),
-        ("operations-dependencies", "Operations and Dependencies", "Deployment, observability, incidents, vendors, and hidden manual work."),
+    ("交付", [
+        ("architecture-integrations", "架构与集成", "运行边界、依赖、接口契约和责任归属。"),
+        ("operations-dependencies", "运维与依赖", "部署、可观测性、事故、供应商和隐藏人工工作。"),
     ]),
-    ("Direction", [
-        ("current-state-roadmap", "Current State and Roadmap", "What is live, limited, partial, planned, deprecated, or unknown."),
-        ("product-debt", "Product Debt", "Evidence, instrumentation, workflow, evaluation, and decision debt."),
+    ("方向", [
+        ("current-state-roadmap", "当前状态与路线图", "已上线、有限开放、部分完成、规划中、已废弃或未知的内容。"),
+        ("product-debt", "产品债务", "证据、埋点、工作流、评估和决策债务。"),
     ]),
-    ("Takeover", [
-        ("risks-unknowns", "Risks and Unknowns", "Prioritized product, AI, data, delivery, and governance risks."),
-        ("stakeholder-agenda", "Stakeholder Agenda", "Questions, owners, evidence requests, and decision meetings."),
-        ("takeover-plan", "30 / 60 / 90 Day Plan", "Outcomes, actions, dependencies, owners, and exit criteria."),
+    ("接手", [
+        ("risks-unknowns", "风险与未知问题", "按优先级整理产品、AI、数据、交付和治理风险。"),
+        ("stakeholder-agenda", "利益相关方议程", "问题、负责人、证据请求和决策会议。"),
+        ("takeover-plan", "30 / 60 / 90 天计划", "结果、行动、依赖、负责人和退出标准。"),
     ]),
-    ("Reference", [
-        ("drift-register", "Drift Register", "Contradictions across narrative, docs, code, configuration, and runtime evidence."),
-        ("glossary-sources", "Glossary and Source Map", "Canonical terms, definitions, sources, owners, freshness, and confidence."),
+    ("参考", [
+        ("drift-register", "漂移登记表", "产品叙事、文档、代码、配置和运行证据之间的矛盾。"),
+        ("glossary-sources", "术语与来源地图", "统一术语、定义、来源、负责人、新鲜度和置信度。"),
     ]),
 ]
 
@@ -60,7 +60,7 @@ def make_config() -> dict:
                 "summary": summary,
                 "minutes": 7,
                 "sources": [],
-                "rationale": "Populate from the project evidence ledger during takeover.",
+                "rationale": "根据项目接手证据台账补充。",
                 "status": "unknown",
             }
             if slug == "index":
@@ -70,9 +70,9 @@ def make_config() -> dict:
         sections.append({"title": section, "pages": rendered})
     return {
         "language": "zh-CN",
-        "title": "AI Product Takeover Dossier",
-        "subtitle": "Evidence-backed AI PM operating model",
-        "description": "A searchable offline dossier for taking over an unfamiliar AI product.",
+        "title": "AI 产品项目接手档案",
+        "subtitle": "证据驱动的 AI 产品管理工作模型",
+        "description": "用于接手陌生 AI 产品的可搜索离线档案。",
         "version": "0.1.0",
         "repository": "",
         "sections": sections,
@@ -81,93 +81,93 @@ def make_config() -> dict:
 
 SPECIAL_CONTENT = {
     "index": """<section class="hero">
-  <p class="eyebrow">AI PRODUCT MANAGEMENT · PROJECT TAKEOVER</p>
-  <h2>From repository evidence to product decisions</h2>
-  <p class="hero-lead">Replace this introduction with the product objective, target users, AI value mechanism, current lifecycle stage, and most important takeover decision.</p>
+  <p class="eyebrow">AI 产品管理 · 项目接手</p>
+  <h2>从项目证据走向产品决策</h2>
+  <p class="hero-lead">在这里补充产品目标、目标用户、AI 价值机制、当前生命周期阶段和最重要的接手决策。</p>
   <div class="hero-actions">
-    <a class="button primary" href="page:executive-brief">Read executive brief</a>
-    <a class="button" href="page:takeover-plan">Open takeover plan</a>
+    <a class="button primary" href="page:executive-brief">阅读管理摘要</a>
+    <a class="button" href="page:takeover-plan">打开接手计划</a>
   </div>
 </section>
 
-<h2>Takeover status</h2>
+<h2>接手状态</h2>
 <div class="cards">
-  <article class="card"><h4>Evidence route</h4><p>Product-led, hybrid audit, or evidence recovery.</p></article>
-  <article class="card"><h4>Current confidence</h4><p>Summarize E3/E2/E1/E0 distribution and critical gaps.</p></article>
-  <article class="card"><h4>Next decision</h4><p>Name the highest-impact decision this dossier must unlock.</p></article>
+  <article class="card"><h4>证据路线</h4><p>产品资料驱动、混合审计或证据恢复。</p></article>
+  <article class="card"><h4>当前置信度</h4><p>汇总 E3/E2/E1/E0 分布和关键缺口。</p></article>
+  <article class="card"><h4>下一项决策</h4><p>说明这份档案需要支持的最高影响决策。</p></article>
 </div>
 
-<aside class="callout warning"><h4>Evidence required</h4><p>This starter contains no project conclusions. Replace placeholders only with verified evidence, labeled inference, or explicit unknowns.</p></aside>
+<aside class="callout warning"><h4>需要证据</h4><p>初始模板不包含项目结论，只能使用已验证证据、明确标注的推断或显式未知项替换占位内容。</p></aside>
 """,
-    "executive-brief": """<h2>Product in one page</h2>
-<p>State the user, problem, product promise, AI mechanism, current stage, and business context.</p>
+    "executive-brief": """<h2>一页产品概览</h2>
+<p>说明用户、问题、产品承诺、AI 机制、当前阶段和业务背景。</p>
 
-<h2>Decision snapshot</h2>
+<h2>决策快照</h2>
 <div class="cards">
-  <article class="card"><h4>What is working</h4><p>Verified strengths and evidence.</p></article>
-  <article class="card"><h4>What is at risk</h4><p>Highest-impact risks and uncertainty.</p></article>
-  <article class="card"><h4>What happens next</h4><p>Immediate decisions and 30-day priorities.</p></article>
+  <article class="card"><h4>当前有效</h4><p>已经验证的优势和证据。</p></article>
+  <article class="card"><h4>当前风险</h4><p>影响最大的风险和不确定性。</p></article>
+  <article class="card"><h4>后续行动</h4><p>近期决策和未来 30 天优先事项。</p></article>
 </div>
 
-<h2>Confidence summary</h2>
-<p><span class="evidence e0">E0 · Unknown</span> Replace with the real confidence distribution after the audit.</p>
+<h2>置信度汇总</h2>
+<p><span class="evidence e0">E0 · 未知</span> 审计后替换为实际置信度分布。</p>
 """,
-    "reading-guide": """<h2>Executive 15-minute route</h2>
+    "reading-guide": """<h2>管理层 15 分钟路线</h2>
 <ol class="steps">
-  <li><a href="page:executive-brief">Executive brief</a></li>
-  <li><a href="page:product-context">Product context and users</a></li>
-  <li><a href="page:ai-system">AI system map</a></li>
-  <li><a href="page:metrics-scorecard">Metrics scorecard</a></li>
-  <li><a href="page:risks-unknowns">Risks and unknowns</a></li>
-  <li><a href="page:takeover-plan">30 / 60 / 90 day plan</a></li>
+  <li><a href="page:executive-brief">管理摘要</a></li>
+  <li><a href="page:product-context">产品背景与用户</a></li>
+  <li><a href="page:ai-system">AI 系统地图</a></li>
+  <li><a href="page:metrics-scorecard">指标记分卡</a></li>
+  <li><a href="page:risks-unknowns">风险与未知问题</a></li>
+  <li><a href="page:takeover-plan">30 / 60 / 90 天计划</a></li>
 </ol>
 
-<h2>AI PM complete route</h2>
-<p>Follow the sidebar from product context through the takeover plan and reference sections.</p>
+<h2>AI 产品经理完整路线</h2>
+<p>按照侧边栏顺序，从产品背景阅读到接手计划和参考章节。</p>
 
-<h2>Evidence convention</h2>
-<p><span class="evidence e3">E3 · Verified</span> <span class="evidence e2">E2 · Supported</span> <span class="evidence e1">E1 · Inferred</span> <span class="evidence e0">E0 · Unknown</span></p>
+<h2>证据约定</h2>
+<p><span class="evidence e3">E3 · 已验证</span> <span class="evidence e2">E2 · 有依据</span> <span class="evidence e1">E1 · 推断</span> <span class="evidence e0">E0 · 未知</span></p>
 """,
-    "takeover-plan": """<h2>First 30 days · Establish truth and control</h2>
-<div class="table-scroll"><table><thead><tr><th>Outcome</th><th>Actions</th><th>Owner</th><th>Exit criteria</th></tr></thead><tbody><tr><td>Replace with evidence-backed outcome</td><td>Define concrete actions</td><td>Assign owner</td><td>Use observable criteria</td></tr></tbody></table></div>
+    "takeover-plan": """<h2>前 30 天 · 建立事实与控制</h2>
+<div class="table-scroll"><table><thead><tr><th>结果</th><th>行动</th><th>负责人</th><th>退出标准</th></tr></thead><tbody><tr><td>补充有证据支持的结果</td><td>定义具体行动</td><td>指定负责人</td><td>使用可观察标准</td></tr></tbody></table></div>
 
-<h2>Days 31–60 · Validate and improve</h2>
-<p>Resolve critical unknowns, establish evaluations, and ship bounded improvements.</p>
+<h2>第 31–60 天 · 验证并改进</h2>
+<p>解决关键未知问题、建立评估，并交付边界明确的改进。</p>
 
-<h2>Days 61–90 · Establish operating system</h2>
-<p>Create the product/AI scorecard, review cadence, roadmap logic, and ownership model.</p>
+<h2>第 61–90 天 · 建立运行机制</h2>
+<p>建立产品与 AI 记分卡、评审节奏、路线图逻辑和责任模型。</p>
 """,
 }
 
 
 def generic_content(title: str, summary: str) -> str:
-    return f"""<p><span class="evidence e0">E0 · Unknown</span></p>
-<h2>Current understanding</h2>
-<p>{summary} Replace this placeholder with evidence-backed findings.</p>
+    return f"""<p><span class="evidence e0">E0 · 未知</span></p>
+<h2>当前理解</h2>
+<p>{summary} 请替换为有证据支持的发现。</p>
 
-<h2>What we know</h2>
-<p>List verified or supported facts with sources and confidence.</p>
+<h2>已知事实</h2>
+<p>列出已验证或有依据的事实、来源和置信度。</p>
 
-<h2>What remains uncertain</h2>
-<p>List contradictions, missing evidence, affected decisions, and owners.</p>
+<h2>仍不确定的内容</h2>
+<p>列出矛盾、缺失证据、受影响决策和负责人。</p>
 
-<h2>Why it matters</h2>
-<p>Explain the user, business, AI quality, safety, cost, or delivery impact.</p>
+<h2>重要性</h2>
+<p>说明对用户、业务、AI 质量、安全、成本或交付的影响。</p>
 
-<h2>Next validation or decision</h2>
-<p>Specify the question, method, owner, evidence required, and target date.</p>
+<h2>下一项验证或决策</h2>
+<p>指定问题、方法、负责人、所需证据和目标日期。</p>
 """
 
 
-README = """# AI PM dossier maintenance
+README = """# AI 产品项目接手档案维护说明
 
-1. Edit navigation, metadata, sources, and confidence in `dossier.json`.
-2. Edit source fragments in `content/<slug>.html`.
-3. Rebuild with `python3 /path/to/build_dossier.py .`.
-4. Verify with `python3 /path/to/verify_dossier.py .`.
+1. 在 `dossier.json` 中编辑导航、元数据、来源和置信度。
+2. 在 `content/<slug>.html` 中编辑正文片段。
+3. 使用 `python3 /path/to/build_dossier.py .` 重新构建。
+4. 使用 `python3 /path/to/verify_dossier.py .` 执行验证。
 
-Do not edit generated `index.html`, `pages/`, or `assets/search-index.js` directly.
-Keep confidential internal dossiers separate from sanitized portfolio case studies.
+不要直接编辑生成的 `index.html`、`pages/` 或 `assets/search-index.js`。
+包含机密信息的内部档案必须与可公开材料分开保存并独立审查。
 """
 
 

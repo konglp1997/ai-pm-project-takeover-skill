@@ -25,7 +25,7 @@ Create:
 - **AI PM complete route:** configured order from product to takeover plan.
 - **Engineering/ML route:** AI system → data → evaluation → architecture → operations → risks.
 - **Leadership route:** executive brief → value → scorecard → roadmap/debt → 30/60/90 plan.
-- **Interview/portfolio route:** problem → design decisions → demo → quality/safety → results/lessons; use only sanitized content.
+- **Cross-functional review route:** problem → design decisions → system → quality/safety → results/lessons.
 
 ## Page contract
 
@@ -56,6 +56,6 @@ Use only decision-useful diagrams:
 
 Label inferred edges and confidence. Avoid decorative architecture.
 
-## Portfolio boundary
+## External sharing boundary
 
-The internal dossier may contain confidential paths and operational detail. A portfolio case study must be separately sanitized and should explain problem framing, method, design decisions, architecture, trade-offs, verification, and lessons without exposing company information.
+The internal dossier may contain confidential paths and operational detail. Any externally shared version must be separately sanitized and should explain problem framing, method, design decisions, architecture, trade-offs, verification, and lessons without exposing company information.

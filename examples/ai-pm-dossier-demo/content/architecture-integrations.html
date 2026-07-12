@@ -20,7 +20,7 @@
 </tbody></table></div>
 
 <h2>租户与区域隔离</h2>
-<p><span class="evidence e3">E3 · Verified</span> 租户 ID 在 API、检索过滤、缓存键和审计事件中贯穿；区域策略决定数据与模型路由。任何缺少租户上下文的请求都应 fail closed。</p>
+<p><span class="evidence e3">E3 · 已验证</span> 租户 ID 在 API、检索过滤、缓存键和审计事件中贯穿；区域策略决定数据与模型路由。任何缺少租户上下文的请求都应默认拒绝。</p>
 
 <h2>关键架构决定</h2>
 <ul>
